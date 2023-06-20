@@ -11,10 +11,10 @@
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>© 2022 Company</Copyright>
+    <Description>Provides useful extension methods, alternate Task based API and activities.</Description>
+    <Authors>UiPath Public Sector Technical Account Managers</Authors>
+    <Company>UiPath</Company>
+    <Copyright>© 2023 UiPath</Copyright>
     <PackageTags>UiPath Activit𝗒</PackageTags>
     <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
