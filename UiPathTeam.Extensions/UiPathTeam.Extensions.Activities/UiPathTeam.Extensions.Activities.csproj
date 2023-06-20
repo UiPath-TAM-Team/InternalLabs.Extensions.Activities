@@ -1,20 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net6.0</TargetFrameworks>
-		<RootNamespace>UiPathTeam.Activities.Extensions.Activities</RootNamespace>
-		<AssemblyName>UiPathTeam.Activities.Extensions.Activities</AssemblyName>
-    <PackageId>UiPathTeam.Activities.Extensions.Activities.Implementation</PackageId>
+		<RootNamespace>UiPathTeam.Extensions.Activities</RootNamespace>
+		<AssemblyName>UiPathTeam.Extensions.Activities</AssemblyName>
+    <PackageId>UiPathTeam.Extensions.Activities.Implementation</PackageId>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
-    <DocumentationFile>bin\$(Configuration)\UiPathTeam.Activities.Extensions.Activities.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\UiPathTeam.Extensions.Activities.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
     <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-20220909-01" PrivateAssets="All"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\UiPathTeam.Activities.Extensions\UiPathTeam.Activities.Extensions.csproj" PrivateAssets="All"/>
+    <ProjectReference Include="..\UiPathTeam.Extensions\UiPathTeam.Extensions.csproj" PrivateAssets="All"/>
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

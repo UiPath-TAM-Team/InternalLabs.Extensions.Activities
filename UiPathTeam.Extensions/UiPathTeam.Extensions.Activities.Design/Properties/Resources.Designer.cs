@@ -10,7 +10,7 @@
 
 using System;
 
-namespace UiPathTeam.Activities.Extensions.Activities.Properties
+namespace UiPathTeam.Extensions.Activities.Design.Properties
 {
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
@@ -44,7 +44,7 @@ namespace UiPathTeam.Activities.Extensions.Activities.Properties
             {
                 if (object.ReferenceEquals(resourceMan, null))
                 {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UiPathTeam.Activities.Extensions.Activities.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("UiPathTeam.Extensions.Activities.Design.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -69,35 +69,24 @@ namespace UiPathTeam.Activities.Extensions.Activities.Properties
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Common.
+        ///   Looks up a localized string similar to UiPathTeam.Extensions.
         /// </summary>
-        public static string Common_Category
+        public static string Category
         {
             get
             {
-                return ResourceManager.GetString("Common_Category", resourceCulture);
+                return ResourceManager.GetString("Category", resourceCulture);
             }
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to If set, continue executing the remaining activities even if the current activity has failed..
+        ///   Looks up a localized string similar to Collection.
         /// </summary>
-        public static string ContinueOnError_Description
+        public static string Collection
         {
             get
             {
-                return ResourceManager.GetString("ContinueOnError_Description", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to ContinueOnError.
-        /// </summary>
-        public static string ContinueOnError_DisplayName
-        {
-            get
-            {
-                return ResourceManager.GetString("ContinueOnError_DisplayName", resourceCulture);
+                return ResourceManager.GetString("Collection", resourceCulture);
             }
         }
 
@@ -113,35 +102,35 @@ namespace UiPathTeam.Activities.Extensions.Activities.Properties
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute)..
+        ///   Looks up a localized string similar to Double-click to view.
         /// </summary>
-        public static string Timeout_Description
+        public static string DoubleClickToView
         {
             get
             {
-                return ResourceManager.GetString("Timeout_Description", resourceCulture);
+                return ResourceManager.GetString("DoubleClickToView", resourceCulture);
             }
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Timeout (milliseconds).
+        ///   Looks up a localized string similar to Drop Activity Here.
         /// </summary>
-        public static string Timeout_DisplayName
+        public static string DropActivityHere
         {
             get
             {
-                return ResourceManager.GetString("Timeout_DisplayName", resourceCulture);
+                return ResourceManager.GetString("DropActivityHere", resourceCulture);
             }
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to The activity timed out and was canceled..
+        ///   Looks up a localized string similar to Editing.
         /// </summary>
-        public static string Timeout_Error
+        public static string Editing
         {
             get
             {
-                return ResourceManager.GetString("Timeout_Error", resourceCulture);
+                return ResourceManager.GetString("Editing", resourceCulture);
             }
         }
     }
