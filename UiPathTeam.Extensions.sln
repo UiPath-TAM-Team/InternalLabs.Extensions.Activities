@@ -5,17 +5,19 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UiPathTeam.Extensions", "UiPathTeam.Extensions", "{9D5DF27E-FFC0-47E9-8657-341D52955B85}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Extensions", "UiPathTeam.Extensions\UiPathTeam.Extensions\UiPathTeam.Extensions.csproj", "{6AB88AC8-3F70-4A65-9455-E46595EDE80D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPathTeam.Extensions", "UiPathTeam.Extensions\UiPathTeam.Extensions\UiPathTeam.Extensions.csproj", "{6AB88AC8-3F70-4A65-9455-E46595EDE80D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Extensions.Activities", "UiPathTeam.Extensions\UiPathTeam.Extensions.Activities\UiPathTeam.Extensions.Activities.csproj", "{E4B3709E-BAD8-4BC3-85DD-5321EA9AD5B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPathTeam.Extensions.Activities", "UiPathTeam.Extensions\UiPathTeam.Extensions.Activities\UiPathTeam.Extensions.Activities.csproj", "{E4B3709E-BAD8-4BC3-85DD-5321EA9AD5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Extensions.Activities.Design", "UiPathTeam.Extensions\UiPathTeam.Extensions.Activities.Design\UiPathTeam.Extensions.Activities.Design.csproj", "{307ED545-8AA9-4FB1-8609-F1E0D5421D5E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPathTeam.Extensions.Activities.Design", "UiPathTeam.Extensions\UiPathTeam.Extensions.Activities.Design\UiPathTeam.Extensions.Activities.Design.csproj", "{307ED545-8AA9-4FB1-8609-F1E0D5421D5E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6ED1F639-536D-48CF-B6D5-8116C57B03D6}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities", "Shared\UiPath.Shared.Activities\UiPath.Shared.Activities.shproj", "{4546856D-EA50-45C6-9419-EEEACB5A80AA}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.Design", "Shared\UiPath.Shared.Activities.Design\UiPath.Shared.Activities.Design.shproj", "{DF9C43F0-ADD3-4FBF-995E-84B92F9CBF25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPathTeam.Extensions.Tests", "UiPathTeam.Extensions.Tests\UiPathTeam.Extensions.Tests.csproj", "{7C04799E-4080-470D-8DF1-1380CFC99F50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,6 +37,10 @@ Global
 		{307ED545-8AA9-4FB1-8609-F1E0D5421D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{307ED545-8AA9-4FB1-8609-F1E0D5421D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{307ED545-8AA9-4FB1-8609-F1E0D5421D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C04799E-4080-470D-8DF1-1380CFC99F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C04799E-4080-470D-8DF1-1380CFC99F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C04799E-4080-470D-8DF1-1380CFC99F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C04799E-4080-470D-8DF1-1380CFC99F50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

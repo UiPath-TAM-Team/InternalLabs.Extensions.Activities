@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0</TargetFrameworks>
+    <TargetFrameworks>net6.0;net461</TargetFrameworks>
 		<RootNamespace>UiPathTeam.Extensions</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions</AssemblyName>
   </PropertyGroup>
