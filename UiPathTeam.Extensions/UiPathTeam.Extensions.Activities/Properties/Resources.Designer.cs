@@ -61,6 +61,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Inserts a key-value pair into an existing Dictionary.
+        /// </summary>
+        public static string AddToDictionary_Description {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The dictionary to insert the key-value pair into.
+        /// </summary>
+        public static string AddToDictionary_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string AddToDictionary_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add to Dictionary.
+        /// </summary>
+        public static string AddToDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("AddToDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The key associated with the value.
+        /// </summary>
+        public static string AddToDictionary_Key_Description {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Key.
+        /// </summary>
+        public static string AddToDictionary_Key_DisplayName {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The value associated with the key.
+        /// </summary>
+        public static string AddToDictionary_Value_Description {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string AddToDictionary_Value_DisplayName {
+            get {
+                return ResourceManager.GetString("AddToDictionary_Value_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Authentication.
         /// </summary>
         public static string Authentication_Category {
@@ -183,6 +255,24 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         public static string Test_OutString_DisplayName {
             get {
                 return ResourceManager.GetString("Test_OutString_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string Test2_Description {
+            get {
+                return ResourceManager.GetString("Test2_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to test2.
+        /// </summary>
+        public static string Test2_DisplayName {
+            get {
+                return ResourceManager.GetString("Test2_DisplayName", resourceCulture);
             }
         }
         

@@ -32,6 +32,7 @@
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Designers\AddToDictionaryDesigner.xaml" />
     <None Remove="Designers\TestDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -82,6 +83,9 @@
       <Generator>XamlIntelliSenseFileGenerator</Generator>
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Designers\AddToDictionaryDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\TestDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

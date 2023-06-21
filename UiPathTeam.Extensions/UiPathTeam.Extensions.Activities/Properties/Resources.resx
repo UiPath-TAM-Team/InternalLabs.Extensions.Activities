@@ -185,6 +185,30 @@
     <value />
     <comment>activity description</comment>
   </data>
+  <data name="Test_InString_DisplayName" xml:space="preserve">
+    <value>InString</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Test_InString_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="Test_OutString_DisplayName" xml:space="preserve">
+    <value>OutString</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Test_OutString_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="Test2_DisplayName" xml:space="preserve">
+    <value>test2</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="Test2_Description" xml:space="preserve">
+    <value />
+    <comment>activity description</comment>
+  </data>
   <data name="Authentication_Category" xml:space="preserve">
     <value>Authentication</value>
     <comment>category</comment>
@@ -221,36 +245,48 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="Test_DisplayName" xml:space="preserve">
-    <value>Test</value>
+  <data name="AddToDictionary_DisplayName" xml:space="preserve">
+    <value>Add to Dictionary</value>
     <comment>activity name</comment>
   </data>
-  <data name="Test_Description" xml:space="preserve">
-    <value />
+  <data name="AddToDictionary_Description" xml:space="preserve">
+    <value>Inserts a key-value pair into an existing Dictionary</value>
     <comment>activity description</comment>
   </data>
-  <data name="Test_InString_DisplayName" xml:space="preserve">
-    <value>InString</value>
+  <data name="AddToDictionary_Dictionary_DisplayName" xml:space="preserve">
+    <value>Dictionary</value>
     <comment>property name</comment>
   </data>
-  <data name="Test_InString_Description" xml:space="preserve">
-    <value />
+  <data name="AddToDictionary_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary to insert the key-value pair into</value>
     <comment>property description</comment>
   </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="Test_OutString_DisplayName" xml:space="preserve">
-    <value>OutString</value>
+  <data name="AddToDictionary_Key_DisplayName" xml:space="preserve">
+    <value>Key</value>
     <comment>property name</comment>
   </data>
-  <data name="Test_OutString_Description" xml:space="preserve">
-    <value />
+  <data name="AddToDictionary_Key_Description" xml:space="preserve">
+    <value>The key associated with the value</value>
     <comment>property description</comment>
   </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
+  <data name="AddToDictionary_Value_DisplayName" xml:space="preserve">
+    <value>Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="AddToDictionary_Value_Description" xml:space="preserve">
+    <value>The value associated with the key</value>
+    <comment>property description</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
     <comment>category</comment>
   </data>
 </root>
