@@ -61,7 +61,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Inserts a key-value pair into an existing Dictionary.
+        ///   Looks up a localized string similar to Inserts a Key-Value pair into an existing Dictionary.
         /// </summary>
         public static string AddToDictionary_Description {
             get {
