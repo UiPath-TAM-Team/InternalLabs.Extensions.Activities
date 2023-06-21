@@ -1,3 +1,8 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
+using System.Activities;
+using UiPathTeam.Extensions.Activities;
+
 namespace UiPathTeam.Extensions.Tests
 {
     [TestClass]
@@ -6,12 +11,18 @@ namespace UiPathTeam.Extensions.Tests
         [TestMethod]
         public void TestMethod1()
         {
-            var testActiuvity = new UiPathTeam.Extensions.Activities.Test
+            var testActivity = new Test
             {
-
+                InString = "test"
             };
 
+            var output = WorkflowInvoker.Invoke(testActivity);
 
+            Assert.IsFalse(String.IsNullOrEmpty(output["OutString"].ToString()));
+
+            Assert.AreEqual("Hello, test", output["OutString"]);
+           
+            
         }
     }
 }

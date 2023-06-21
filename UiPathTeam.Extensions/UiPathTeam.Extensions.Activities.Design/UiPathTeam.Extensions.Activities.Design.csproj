@@ -4,14 +4,14 @@
     <UseWPF>true</UseWPF>
 		<RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
-    <PackageId>UiPathTeam.Extensions.Activities</PackageId>
+    <PackageId>UiPathTeam.Activities.Extensions</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>Provides useful extension methods, alternate Task based API and activities.</Description>
+    <Description>Provides useful extension methods, alternate Task based API and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects</Description>
     <Authors>UiPath Public Sector Technical Account Managers</Authors>
     <Company>UiPath</Company>
     <Copyright>© 2023 UiPath</Copyright>
