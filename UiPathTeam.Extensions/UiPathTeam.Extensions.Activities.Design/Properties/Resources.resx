@@ -121,6 +121,9 @@
     <value>UiPathTeam.Extensions</value>
     <comment>category</comment>
   </data>
+  <data name="CategoryStatements" xml:space="preserve">
+    <value>UiPathTeam.Activities.Extensions.Statements</value>
+  </data>
   <data name="Collection" xml:space="preserve">
     <value>Collection</value>
     <comment>label</comment>

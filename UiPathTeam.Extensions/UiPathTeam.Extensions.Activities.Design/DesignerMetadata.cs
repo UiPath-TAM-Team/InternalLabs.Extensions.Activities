@@ -13,7 +13,8 @@ namespace UiPathTeam.Extensions.Activities.Design
             var builder = new AttributeTableBuilder();
             builder.ValidateTable();
 
-            var categoryAttribute = new CategoryAttribute($"{Resources.Category}");
+            //var categoryAttribute = new CategoryAttribute($"{Resources.Category}");
+            var categoryAttribute = new CategoryAttribute($"{Resources.CategoryStatements}");
 
             builder.AddCustomAttributes(typeof(Test), categoryAttribute);
             builder.AddCustomAttributes(typeof(Test), new DesignerAttribute(typeof(TestDesigner)));
