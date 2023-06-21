@@ -71,8 +71,11 @@
 		<Reference Include="System.Xml" />
 	</ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
-    <PackageReference Include="UiPath.Workflow" Version="6.0.0-20220909-01" PrivateAssets="All" />
-    <PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
+    <PackageReference Include="UiPath.Workflow" Version="6.0.3" PrivateAssets="All" />
+	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.3" PrivateAssets="All" />
+	  <PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
+	  <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
+
   </ItemGroup>
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
