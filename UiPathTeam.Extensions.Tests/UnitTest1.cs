@@ -1,7 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Activities;
 using UiPathTeam.Extensions.Activities;
+using System.Activities;
 
 namespace UiPathTeam.Extensions.Tests
 {
@@ -21,8 +19,6 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsFalse(String.IsNullOrEmpty(output["OutString"].ToString()));
 
             Assert.AreEqual("Hello, test", output["OutString"]);
-           
-            
         }
     }
 }

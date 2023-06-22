@@ -17,7 +17,7 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "UiPath.Shared.Activities.De
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UiPathTeam.Extensions", "UiPathTeam.Extensions\UiPathTeam.Extensions\UiPathTeam.Extensions.csproj", "{3B4B5850-B2F3-41F6-B642-D998A3DBA170}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Extensions.Tests", "UiPathTeam.Extensions.Tests\UiPathTeam.Extensions.Tests.csproj", "{8D40344E-104A-4523-ADF9-8DC973541F4D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UiPathTeam.Extensions.Tests", "UiPathTeam.Extensions.Tests\UiPathTeam.Extensions.Tests.csproj", "{9247472B-2578-465A-B425-E992F7FBFFE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{3B4B5850-B2F3-41F6-B642-D998A3DBA170}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3B4B5850-B2F3-41F6-B642-D998A3DBA170}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3B4B5850-B2F3-41F6-B642-D998A3DBA170}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8D40344E-104A-4523-ADF9-8DC973541F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8D40344E-104A-4523-ADF9-8DC973541F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8D40344E-104A-4523-ADF9-8DC973541F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8D40344E-104A-4523-ADF9-8DC973541F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9247472B-2578-465A-B425-E992F7FBFFE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9247472B-2578-465A-B425-E992F7FBFFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9247472B-2578-465A-B425-E992F7FBFFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9247472B-2578-465A-B425-E992F7FBFFE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
