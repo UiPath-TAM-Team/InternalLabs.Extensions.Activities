@@ -8,38 +8,51 @@ namespace UiPathTeam.Extensions.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestTestActivity()
-        {
-            var testActivity = new Test
-            {
-                InString = new InArgument<String>("test")
-            };
-
-            var output = WorkflowInvoker.Invoke(testActivity);
-
-            Assert.IsFalse(String.IsNullOrEmpty(output["OutString"].ToString()));
-
-            Assert.AreEqual("Hello, test", output["OutString"]);
-        }
-
-        [TestMethod]
         public void TestAddToDictionary()
         {
             var dictionary = new Dictionary<Object, Object>();
-            var key = "test key";
-            var value = "test value";
+            var stringKey = "test key";
+            var stringValue = "test value";
 
             var addToDictionaryActivity = new AddToDictionary
             {
                 Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
-                Key = new InArgument<Object>((ctx) => key),
-                Value = new InArgument<Object>((ctx) => value)
+                Key = new InArgument<Object>((ctx) => stringKey),
+                Value = new InArgument<Object>((ctx) => stringValue)
             };
 
             WorkflowInvoker.Invoke(addToDictionaryActivity);
 
-            Assert.AreEqual("test value", dictionary["test key"]);
+            Assert.AreEqual(stringValue, dictionary[stringKey]);
             Assert.AreEqual(1, dictionary.Count);
+
+            stringKey = "another key";
+            var integerValue = 32;
+
+            addToDictionaryActivity = new AddToDictionary
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Key = new InArgument<Object>((ctx) => stringKey),
+                Value = new InArgument<Object>((ctx) => integerValue)
+            };
+
+            WorkflowInvoker.Invoke(addToDictionaryActivity);
+            Assert.AreEqual(integerValue, dictionary[stringKey]);
+            Assert.AreEqual(2, dictionary.Count);
+
+            var integerKey = 42;
+            stringValue = "the answer";
+
+            addToDictionaryActivity = new AddToDictionary
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Key = new InArgument<Object>((ctx) => integerKey),
+                Value = new InArgument<Object>((ctx) => stringValue)
+            };
+
+            WorkflowInvoker.Invoke(addToDictionaryActivity);
+            Assert.AreEqual(stringValue, dictionary[integerKey]);
+            Assert.AreEqual(3, dictionary.Count);
         }
     }
 }
