@@ -177,38 +177,6 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="Test_DisplayName" xml:space="preserve">
-    <value>Test</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="Test_Description" xml:space="preserve">
-    <value />
-    <comment>activity description</comment>
-  </data>
-  <data name="Test_InString_DisplayName" xml:space="preserve">
-    <value>InString</value>
-    <comment>property name</comment>
-  </data>
-  <data name="Test_InString_Description" xml:space="preserve">
-    <value />
-    <comment>property description</comment>
-  </data>
-  <data name="Test_OutString_DisplayName" xml:space="preserve">
-    <value>OutString</value>
-    <comment>property name</comment>
-  </data>
-  <data name="Test_OutString_Description" xml:space="preserve">
-    <value />
-    <comment>property description</comment>
-  </data>
-  <data name="Test2_DisplayName" xml:space="preserve">
-    <value>test2</value>
-    <comment>activity name</comment>
-  </data>
-  <data name="Test2_Description" xml:space="preserve">
-    <value />
-    <comment>activity description</comment>
-  </data>
   <data name="AddToDictionary_DisplayName" xml:space="preserve">
     <value>Add to Dictionary</value>
     <comment>activity name</comment>

@@ -7,6 +7,4 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Activities
 ### Statements
-`Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary   
-
-`Test`: A sample activity for testing
+`Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
