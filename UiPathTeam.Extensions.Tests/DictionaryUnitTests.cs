@@ -5,7 +5,7 @@ using UiPathTeam.Extensions.Activities.Design;
 namespace UiPathTeam.Extensions.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class DictionaryUnitTests
     {
         [TestMethod]
         public void TestAddToDictionary()

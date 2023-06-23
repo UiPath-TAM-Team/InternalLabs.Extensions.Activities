@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -18,7 +18,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
 	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
-	  <PackageReference Include="UiPath.Workflow" Version="6.0.0" PrivateAssets="All" />
+	  <PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
 	
 	  <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
   </ItemGroup>
