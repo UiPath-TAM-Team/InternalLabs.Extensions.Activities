@@ -32,7 +32,7 @@
     <PackageVersion>0.1.0</PackageVersion>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Designers\TestDesigner.xaml" />
+    <None Remove="Designers\AddToDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -71,9 +71,10 @@
 		<Reference Include="System.Xml" />
 	</ItemGroup>
   <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
-    <PackageReference Include="UiPath.Workflow" Version="6.0.3" PrivateAssets="All" />
-	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.3" PrivateAssets="All" />
+	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
+	  <PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
 	  <PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
+	  <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
 
   </ItemGroup>
   <ItemGroup>
@@ -83,7 +84,7 @@
       <SubType>Designer</SubType>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
-    <Page Include="Designers\TestDesigner.xaml">
+    <Page Include="Designers\AddToDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Themes\Icons.xaml">
