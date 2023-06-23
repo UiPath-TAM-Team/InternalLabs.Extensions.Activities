@@ -19,6 +19,8 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsFalse(String.IsNullOrEmpty(output["OutString"].ToString()));
 
             Assert.AreEqual("Hello, test", output["OutString"]);
+
+            // Comment to show changes
         }
     }
 }
