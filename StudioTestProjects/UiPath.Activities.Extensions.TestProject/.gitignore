@@ -6,3 +6,7 @@
 *AllDependencies.json
 *.local
 ExceptionScreenshots
+*.objects
+*.project
+*.settings
+*.tmh
