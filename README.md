@@ -1,5 +1,6 @@
 # [UiPathTeam.Extensions.Activities](https://marketplace.uipath.com/listings/uipathteam-extensions-activities)
 
+## Description
 A collection of extension methods, tasks, and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects
 
 ## Installation
