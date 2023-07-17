@@ -7,7 +7,7 @@ using UiPathTeam.Extensions.Activities.Properties;
 using UiPath.Shared.Activities;
 using UiPath.Shared.Activities.Localization;
 
-namespace UiPathTeam.Extensions.Activities.Design
+namespace UiPathTeam.Extensions.Activities
 {
     [LocalizedDisplayName(nameof(Resources.AddToDictionary_DisplayName))]
     [LocalizedDescription(nameof(Resources.AddToDictionary_Description))]
@@ -26,17 +26,17 @@ namespace UiPathTeam.Extensions.Activities.Design
         [LocalizedDisplayName(nameof(Resources.AddToDictionary_Dictionary_DisplayName))]
         [LocalizedDescription(nameof(Resources.AddToDictionary_Dictionary_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<Dictionary<Object, Object>> Dictionary { get; set; }
+        public InArgument<Dictionary<object, object>> Dictionary { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.AddToDictionary_Key_DisplayName))]
         [LocalizedDescription(nameof(Resources.AddToDictionary_Key_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<Object> Key { get; set; }
+        public InArgument<object> Key { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.AddToDictionary_Value_DisplayName))]
         [LocalizedDescription(nameof(Resources.AddToDictionary_Value_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<Object> Value { get; set; }
+        public InArgument<object> Value { get; set; }
 
         #endregion
 
@@ -67,11 +67,11 @@ namespace UiPathTeam.Extensions.Activities.Design
             var dictionary = Dictionary.Get(context);
             var key = Key.Get(context);
             var value = Value.Get(context);
-            
-            dictionary.Add(key, value);
 
-            // Outputs
-            return (ctx) => {
+			      dictionary.Add(key, value);
+
+			// Outputs
+			return (ctx) => {
             };
         }
 

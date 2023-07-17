@@ -88,7 +88,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add to Dictionary.
+        ///   Looks up a localized string similar to AddToDictionary.
         /// </summary>
         public static string AddToDictionary_DisplayName {
             get {
