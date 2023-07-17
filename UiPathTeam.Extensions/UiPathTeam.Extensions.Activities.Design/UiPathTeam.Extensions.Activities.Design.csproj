@@ -1,20 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net6.0-windows;net461</TargetFrameworks>
+    <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
 		<RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
-    <PackageId>UiPathTeam.Activities.Extensions</PackageId>
+    <PackageId>UiPathTeam.Extensions.Activities</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>Provides useful extension methods, alternate Task based API and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects</Description>
-    <Authors>UiPath Public Sector Technical Account Managers</Authors>
-    <Company>UiPath</Company>
-    <Copyright>© 2023 UiPath</Copyright>
+    <Description>This package was generated using the UiPath VS Extension.</Description>
+    <Authors>Company</Authors>
+    <Company>Company</Company>
+    <Copyright>© 2022 Company</Copyright>
     <PackageTags>UiPath Activit𝗒</PackageTags>
     <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
@@ -56,26 +56,25 @@
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\UiPathTeam.Extensions.Activities.Design.xml</DocumentationFile>
   </PropertyGroup>
-	<ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
-		<Reference Include="System" />
-		<Reference Include="System.Activities" />
-		<Reference Include="System.Activities.Core.Presentation" />
-		<Reference Include="System.Activities.Presentation" />
-		<Reference Include="System.ComponentModel.Composition" />
-		<Reference Include="System.Core" />
-		<Reference Include="System.Xml.Linq" />
-		<Reference Include="System.Data.DataSetExtensions" />
-		<Reference Include="Microsoft.CSharp" />
-		<Reference Include="System.Data" />
-		<Reference Include="System.Net.Http" />
-		<Reference Include="System.Xml" />
-	</ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
-	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
-	  <PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
-	  <PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
-	  <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
-
+		<ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
+			<Reference Include="System" />
+			<Reference Include="System.Activities" />
+			<Reference Include="System.Activities.Core.Presentation" />
+			<Reference Include="System.Activities.Presentation" />
+			<Reference Include="System.ComponentModel.Composition" />
+			<Reference Include="System.Core" />
+			<Reference Include="System.Xml.Linq" />
+			<Reference Include="System.Data.DataSetExtensions" />
+			<Reference Include="Microsoft.CSharp" />
+			<Reference Include="System.Data" />
+			<Reference Include="System.Net.Http" />
+			<Reference Include="System.Xml" />
+		</ItemGroup>
+		<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
+			<PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
+			<PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
+			<PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
+			<PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="..\..\Shared\Themes\Generic.xaml">
