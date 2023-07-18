@@ -205,6 +205,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string RemoveFromDictionary_Description {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RemoveFromDictionary.
+        /// </summary>
+        public static string RemoveFromDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string RemoveFromDictionary_In_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_In_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Dictionary.
+        /// </summary>
+        public static string RemoveFromDictionary_In_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_In_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string RemoveFromDictionary_In_Key_Description {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_In_Key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Key.
+        /// </summary>
+        public static string RemoveFromDictionary_In_Key_DisplayName {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_In_Key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string RemoveFromDictionary_Out_Result_Description {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_Out_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_Result.
+        /// </summary>
+        public static string RemoveFromDictionary_Out_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("RemoveFromDictionary_Out_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute)..
         /// </summary>
         public static string Timeout_Description {
