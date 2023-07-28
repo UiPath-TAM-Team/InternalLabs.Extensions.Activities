@@ -1,4 +1,4 @@
-namespace UiPathTeam.Extensions.Activities.Design.Design.Designers
+namespace UiPathTeam.Extensions.Activities.Design.Designers
 {
     /// <summary>
     /// Interaction logic for AddToDictionaryDesigner.xaml

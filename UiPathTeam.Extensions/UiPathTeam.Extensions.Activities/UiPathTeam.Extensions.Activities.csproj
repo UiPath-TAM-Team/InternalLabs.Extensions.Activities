@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net461</TargetFrameworks>
+    <TargetFrameworks>net461;net6.0</TargetFrameworks>
 		<RootNamespace>UiPathTeam.Extensions.Activities</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions.Activities</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities.Implementation</PackageId>
@@ -21,14 +21,14 @@
 		<Reference Include="System.Net.Http" />
 		<Reference Include="System.Xml" />
 	</ItemGroup>
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
-	  <PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
-	  <PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
-	  
-	  <PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
-	  
-	  
-  </ItemGroup>
+	<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0' ">
+		<PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
+		<PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
+
+		<PackageReference Include="System.Activities.Metadata" Version="6.0.0-*" PrivateAssets="All" />
+
+
+	</ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\UiPathTeam.Extensions\UiPathTeam.Extensions.csproj" PrivateAssets="All" />
   </ItemGroup>

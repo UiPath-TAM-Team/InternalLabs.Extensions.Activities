@@ -149,6 +149,10 @@
     <value>Authentication</value>
     <comment>category</comment>
   </data>
+  <data name="Common_Category" xml:space="preserve">
+    <value>Common</value>
+    <comment>category</comment>
+  </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
@@ -178,7 +182,7 @@
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="AddToDictionary_DisplayName" xml:space="preserve">
-    <value>Add to Dictionary</value>
+    <value>AddToDictionary</value>
     <comment>activity name</comment>
   </data>
   <data name="AddToDictionary_Description" xml:space="preserve">
@@ -193,6 +197,10 @@
     <value>The dictionary to insert the key-value pair into</value>
     <comment>property description</comment>
   </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
   <data name="AddToDictionary_Key_DisplayName" xml:space="preserve">
     <value>Key</value>
     <comment>property name</comment>
@@ -201,6 +209,10 @@
     <value>The key associated with the value</value>
     <comment>property description</comment>
   </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
   <data name="AddToDictionary_Value_DisplayName" xml:space="preserve">
     <value>Value</value>
     <comment>property name</comment>
@@ -208,5 +220,9 @@
   <data name="AddToDictionary_Value_Description" xml:space="preserve">
     <value>The value associated with the key</value>
     <comment>property description</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
   </data>
 </root>

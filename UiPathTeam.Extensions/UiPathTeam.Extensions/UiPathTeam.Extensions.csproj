@@ -1,6 +1,6 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net461</TargetFrameworks>
+    <TargetFrameworks>net461;net6.0</TargetFrameworks>
 		<RootNamespace>UiPathTeam.Extensions</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions</AssemblyName>
   </PropertyGroup>
@@ -25,7 +25,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Contracts\" />
     <Folder Include="Enums\" />
     <Folder Include="Models\" />
   </ItemGroup>
