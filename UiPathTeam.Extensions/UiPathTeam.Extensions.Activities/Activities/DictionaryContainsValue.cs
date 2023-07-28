@@ -65,13 +65,11 @@ namespace UiPathTeam.Extensions.Activities
             var dictionary = Dictionary.Get(context);
             var value = Value.Get(context);
     
-            ///////////////////////////
-            // Add execution logic HERE
-            ///////////////////////////
+            var result = dictionary.ContainsValue(value);
 
             // Outputs
             return (ctx) => {
-                Result.Set(ctx, null);
+                Result.Set(ctx, result);
             };
         }
 
