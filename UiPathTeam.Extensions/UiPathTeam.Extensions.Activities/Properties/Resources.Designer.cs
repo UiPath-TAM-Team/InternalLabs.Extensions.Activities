@@ -169,6 +169,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns a Boolean if the provided dictionary contains the given value..
+        /// </summary>
+        public static string DictionaryContainsValue_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string DictionaryContainsValue_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary Contains Value.
+        /// </summary>
+        public static string DictionaryContainsValue_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Result_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string DictionaryContainsValue_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Value_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string DictionaryContainsValue_Value_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Value_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         public static string Do {
