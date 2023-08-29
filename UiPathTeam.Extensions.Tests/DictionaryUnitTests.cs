@@ -1,4 +1,5 @@
 using System.Activities;
+using System.Collections.Immutable;
 using UiPathTeam.Extensions.Activities;
 
 namespace UiPathTeam.Extensions.Tests
@@ -53,5 +54,27 @@ namespace UiPathTeam.Extensions.Tests
 			Assert.AreEqual(stringValue, dictionary[integerKey]);
 			Assert.AreEqual(3, dictionary.Count);
 		}
-	}
+
+        [TestMethod]
+        public void TestRemoveFromDictionary()
+		{
+            var dictionary = new Dictionary<Object, Object>();
+			
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+			dictionary.Add(stringKey, stringValue);
+
+            var removeFromDictionaryActivity = new RemoveFromDictionary
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                In_Key = new InArgument<Object>((ctx) => stringKey),
+            };
+
+            WorkflowInvoker.Invoke(removeFromDictionaryActivity);
+
+			Assert.IsTrue(dictionary.Count == 0);
+        }
+
+    }
 }
