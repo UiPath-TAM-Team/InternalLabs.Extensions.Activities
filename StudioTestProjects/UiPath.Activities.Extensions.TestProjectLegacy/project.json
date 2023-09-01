@@ -49,10 +49,6 @@
         "fileName": "TestAddToDictionary.xaml"
       },
       {
-        "templateType": "TestCase",
-        "fileName": ".templates\\TestRemoveFromDictionaryTemplate.xaml"
-      },
-      {
         "editingStatus": "InProgress",
         "testCaseId": "a74af245-1168-4238-8ae9-e238df29e1c2",
         "testCaseType": "TestCase",
