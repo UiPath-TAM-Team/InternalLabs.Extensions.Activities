@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Activities.Extensions": "[0.1.0.623184149]"
+    "UiPathTeam.Extensions.Activities": "[0.1.0.814160408]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,6 +20,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -46,6 +47,17 @@
         "testCaseId": "38ebd7d0-68bc-4334-81b6-bfea22c1dd65",
         "testCaseType": "TestCase",
         "fileName": "TestAddToDictionary.xaml"
+      },
+      {
+        "templateType": "TestCase",
+        "fileName": ".templates\\TestRemoveFromDictionaryTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a74af245-1168-4238-8ae9-e238df29e1c2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestRemoveFromDictionary.xaml"
       }
     ],
     "modernBehavior": true
