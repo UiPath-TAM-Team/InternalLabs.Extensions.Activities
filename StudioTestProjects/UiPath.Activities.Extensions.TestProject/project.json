@@ -3,10 +3,11 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
+    "LocalPublishedProcess": "[1.0.1]",
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Activities.Extensions": "[0.1.0.623184149]"
+    "UiPathTeam.Extensions.Activities": "[0.1.0.803004943]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,6 +21,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
