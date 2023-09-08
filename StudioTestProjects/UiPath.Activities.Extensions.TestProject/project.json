@@ -3,11 +3,10 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
-    "LocalPublishedProcess": "[1.0.1]",
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.1.0.803004943]"
+    "UiPathTeam.Extensions.Activities": "[0.1.0.731181303]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -48,6 +47,13 @@
         "testCaseId": "f7304fc7-9099-42a0-a8f7-b68b7fbbfaea",
         "testCaseType": "TestCase",
         "fileName": "TestAddToDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "40888c7b-7ab1-4b52-bb53-23cf642d6439",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestRemoveFromDictionary.xaml"
       }
     ],
     "modernBehavior": true
