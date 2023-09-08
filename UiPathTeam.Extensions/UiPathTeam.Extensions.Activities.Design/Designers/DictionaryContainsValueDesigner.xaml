@@ -27,6 +27,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
             <Label Content="{x:Static activity:Resources.DictionaryContainsValue_Dictionary_DisplayName}" Grid.Row="0"
@@ -34,6 +36,14 @@
             <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[Dictionary].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.DictionaryContainsValue_Dictionary_Description}" UseLocationExpression="False">
                 <sapv:ExpressionTextBox.Expression>
                     <Binding Path="ModelItem.Dictionary" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
+
+            <Label Content="{x:Static activity:Resources.DictionaryContainsValue_Value_DisplayName}" Grid.Row="2"
+                   ToolTip="{x:Static activity:Resources.DictionaryContainsValue_Value_Description}"/>
+            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[Value].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.DictionaryContainsValue_Value_Description}" UseLocationExpression="False">
+                <sapv:ExpressionTextBox.Expression>
+                    <Binding Path="ModelItem.Value" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
                 </sapv:ExpressionTextBox.Expression>
             </sapv:ExpressionTextBox>
         </Grid>

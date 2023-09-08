@@ -90,6 +90,7 @@
     </Page>
     <Page Include="Designers\DictionaryContainsValueDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>		
     <Page Include="Designers\RemoveFromDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

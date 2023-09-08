@@ -30,13 +30,13 @@ namespace UiPathTeam.Extensions.Activities
 
         [LocalizedDisplayName(nameof(Resources.DictionaryContainsValue_Result_DisplayName))]
         [LocalizedDescription(nameof(Resources.DictionaryContainsValue_Result_Description))]
-        [LocalizedCategory(nameof(Resources.Input_Category))]
-        public OutArgument<string> Result { get; set; }
+        [LocalizedCategory(nameof(Resources.Output_Category))]
+        public OutArgument<bool> Result { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.DictionaryContainsValue_Value_DisplayName))]
         [LocalizedDescription(nameof(Resources.DictionaryContainsValue_Value_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> Value { get; set; }
+        public InArgument<object> Value { get; set; }
 
         #endregion
 
@@ -55,6 +55,7 @@ namespace UiPathTeam.Extensions.Activities
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
             if (Dictionary == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Dictionary)));
+            if (Value == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(Value)));
 
             base.CacheMetadata(metadata);
         }
@@ -69,7 +70,7 @@ namespace UiPathTeam.Extensions.Activities
 
             // Outputs
             return (ctx) => {
-                Result.Set(ctx, result);
+                Result.Set(ctx, null);
             };
         }
 
