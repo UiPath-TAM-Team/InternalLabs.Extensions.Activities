@@ -209,6 +209,38 @@
     <value>The value associated with the key</value>
     <comment>property description</comment>
   </data>
+  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
+    <value>RemoveFromDictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Description" xml:space="preserve">
+    <value />
+    <comment>activity description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
+    <value>in_Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
   <data name="Authentication_Category" xml:space="preserve">
     <value>Authentication</value>
     <comment>category</comment>
@@ -245,19 +277,19 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
-    <value>RemoveFromDictionary</value>
+  <data name="VerifyKeyInDictionary_DisplayName" xml:space="preserve">
+    <value>VerifyKeyInDictionary</value>
     <comment>activity name</comment>
   </data>
-  <data name="RemoveFromDictionary_Description" xml:space="preserve">
-    <value />
+  <data name="VerifyKeyInDictionary_Description" xml:space="preserve">
+    <value>Verify that a key is in the dictionary and return the value if it is</value>
     <comment>activity description</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
-    <value>in_Dictionary</value>
+  <data name="VerifyKeyInDictionary_In_dictionary_DisplayName" xml:space="preserve">
+    <value>in_dictionary</value>
     <comment>property name</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
+  <data name="VerifyKeyInDictionary_In_dictionary_Description" xml:space="preserve">
     <value />
     <comment>property description</comment>
   </data>
@@ -265,11 +297,11 @@
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
-    <value>in_Key</value>
+  <data name="VerifyKeyInDictionary_In_key_DisplayName" xml:space="preserve">
+    <value>in_key</value>
     <comment>property name</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
+  <data name="VerifyKeyInDictionary_In_key_Description" xml:space="preserve">
     <value />
     <comment>property description</comment>
   </data>
@@ -277,11 +309,23 @@
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
-    <value>out_Result</value>
+  <data name="VerifyKeyInDictionary_Out_result_DisplayName" xml:space="preserve">
+    <value>out_result</value>
     <comment>property name</comment>
   </data>
-  <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
+  <data name="VerifyKeyInDictionary_Out_result_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>Output</value>
+    <comment>category</comment>
+  </data>
+  <data name="VerifyKeyInDictionary_Out_value_DisplayName" xml:space="preserve">
+    <value>out_value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="VerifyKeyInDictionary_Out_value_Description" xml:space="preserve">
     <value />
     <comment>property description</comment>
   </data>

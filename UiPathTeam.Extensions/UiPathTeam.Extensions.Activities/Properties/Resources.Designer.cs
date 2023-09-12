@@ -338,5 +338,95 @@ namespace UiPathTeam.Extensions.Activities.Properties {
                 return ResourceManager.GetString("ValidationValue_Error", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Verify that a key is in the dictionary and return the value if it is.
+        /// </summary>
+        public static string VerifyKeyInDictionary_Description {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VerifyKeyInDictionary.
+        /// </summary>
+        public static string VerifyKeyInDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string VerifyKeyInDictionary_In_dictionary_Description {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_In_dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_dictionary.
+        /// </summary>
+        public static string VerifyKeyInDictionary_In_dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_In_dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string VerifyKeyInDictionary_In_key_Description {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_In_key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_key.
+        /// </summary>
+        public static string VerifyKeyInDictionary_In_key_DisplayName {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_In_key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string VerifyKeyInDictionary_Out_result_Description {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_Out_result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_result.
+        /// </summary>
+        public static string VerifyKeyInDictionary_Out_result_DisplayName {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_Out_result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string VerifyKeyInDictionary_Out_value_Description {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_Out_value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_value.
+        /// </summary>
+        public static string VerifyKeyInDictionary_Out_value_DisplayName {
+            get {
+                return ResourceManager.GetString("VerifyKeyInDictionary_Out_value_DisplayName", resourceCulture);
+            }
+        }
     }
 }
