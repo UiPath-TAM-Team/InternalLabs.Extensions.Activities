@@ -1,5 +1,6 @@
 using System.Activities;
 using System.Collections.Immutable;
+using System.Security.Cryptography;
 using UiPathTeam.Extensions.Activities;
 
 namespace UiPathTeam.Extensions.Tests
@@ -75,6 +76,25 @@ namespace UiPathTeam.Extensions.Tests
 
 			Assert.IsTrue(dictionary.Count == 0);
         }
+        [TestMethod]
+        public void TestKeyInDictionary(Assert assert)
+        {
+            var dictionary = new Dictionary<String, Object>();
 
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+            dictionary.Add(stringKey, stringValue);
+
+            var VerifyKeyInDictionaryActivity = new VerifyKeyInDictionary
+            {
+                In_dictionary = new InArgument<Dictionary<String, Object>>((ctx) => dictionary),
+                In_key = new InArgument<String>((ctx) => stringKey),
+            };
+
+            WorkflowInvoker.Invoke(VerifyKeyInDictionaryActivity);
+			Assert.IsTrue(dictionary.ContainsKey(stringKey));	
+            
+        }
     }
 }
