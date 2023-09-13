@@ -8,3 +8,4 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 ## Activities
 ### Statements
 `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
+`Count Dictionary`: Counts the Key-Value pair ina dictionary of Dictionary<Object, Object> and retursn an int
