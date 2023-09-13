@@ -83,7 +83,6 @@ namespace UiPathTeam.Extensions.Tests
 
             var stringKey = "test key";
             var stringValue = "test value";
-
             dictionary.Add(stringKey, stringValue);
 
             var VerifyKeyInDictionaryActivity = new VerifyKeyInDictionary
