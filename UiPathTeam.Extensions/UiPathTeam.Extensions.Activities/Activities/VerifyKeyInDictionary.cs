@@ -76,7 +76,8 @@ namespace UiPathTeam.Extensions.Activities
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
-            if (in_dictionary.Equals(in_key))
+
+            if (in_dictionary.ContainsKey(in_key))
             {
                 out_result = true;
                 out_value = in_dictionary[in_key];
@@ -85,6 +86,7 @@ namespace UiPathTeam.Extensions.Activities
             {
                 out_result = false;
             }
+
             // Outputs
             return (ctx) => {
                 Out_result.Set(ctx, out_result);
