@@ -67,7 +67,8 @@ namespace UiPathTeam.Extensions.Activities
 
         protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
-            // Inputs
+            // Inputs, two in, two out.
+            // Issue/Story: https://github.com/UiPath-TAM-Team/UiPathTAMTeam.Extensions.Activities/issues/20
             var in_dictionary = In_dictionary.Get(context);
             var in_key = In_key.Get(context);
             var out_result = Out_result.Get(context);

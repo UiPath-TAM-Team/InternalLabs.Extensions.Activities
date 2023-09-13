@@ -92,6 +92,7 @@ namespace UiPathTeam.Extensions.Tests
             // Set the key you want to test
             var in_key = "key1";
 
+            // Positive Test: Key is in dictionary,return true and value
             // Create an instance of your workflow activity
             var VerifyKeyInDictionary = new VerifyKeyInDictionary();
 
@@ -111,6 +112,41 @@ namespace UiPathTeam.Extensions.Tests
 
             // Additional assertions based on your activity's behavior
             Assert.AreEqual("value1", outputValue); // Verify the expected value
+        }
+        [TestMethod]
+        public void TestVerifyKeyInDictionary_KeyDoesNotExists()
+        {
+            // Negetive test, Key is not in dictionary, return false and null
+            // Create the dictionary and populate it with key-value pairs
+            var dictionary = new Dictionary<string, object>
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+                // Add more key-value pairs as needed
+            };
+
+            // Set the key you want to test
+            var in_key = "Failure";
+
+            // Create an instance of your workflow activity
+            var VerifyKeyInDictionary = new VerifyKeyInDictionary();
+
+            // Set the arguments using expressions
+            VerifyKeyInDictionary.In_dictionary = new InArgument<Dictionary<string, object>>(ctx => dictionary);
+            VerifyKeyInDictionary.In_key = new InArgument<string>(ctx => in_key);
+
+            // Invoke the workflow synchronously and capture the results
+            IDictionary<string, object> output = WorkflowInvoker.Invoke(VerifyKeyInDictionary);
+
+            // Retrieve the output values from the dictionary
+            var outputResult = (bool)output["Out_result"]; // Assuming "Out_result" is the output argument
+            var outputValue = (object)output["Out_value"]; // Assuming "Out_value" is the output argument
+
+            // Assert the result based on your activity's logic
+            Assert.IsFalse(outputResult); // Verify that the result is true when the key exists
+
+            // Additional assertions based on your activity's behavior
+            Assert.AreNotEqual("value1", outputValue); // Verify the expected value
         }
     }
 }
