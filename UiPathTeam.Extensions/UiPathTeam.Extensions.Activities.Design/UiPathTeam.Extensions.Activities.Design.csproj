@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />
+    <None Remove="Designers\CountDictionaryDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -85,6 +86,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Designers\AddToDictionaryDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="Designers\CountDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\RemoveFromDictionaryDesigner.xaml">

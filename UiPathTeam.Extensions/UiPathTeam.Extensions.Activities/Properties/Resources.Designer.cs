@@ -169,6 +169,60 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Counts the number of Value/key pairs in dictionary and returns count.
+        /// </summary>
+        public static string CountDictionary_Description {
+            get {
+                return ResourceManager.GetString("CountDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to CountDictionary.
+        /// </summary>
+        public static string CountDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("CountDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary to be counted.
+        /// </summary>
+        public static string CountDictionary_In_dictionary_Description {
+            get {
+                return ResourceManager.GetString("CountDictionary_In_dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_dictionary.
+        /// </summary>
+        public static string CountDictionary_In_dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("CountDictionary_In_dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Int of count of key pairs.
+        /// </summary>
+        public static string CountDictionary_Out_result_Description {
+            get {
+                return ResourceManager.GetString("CountDictionary_Out_result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_result.
+        /// </summary>
+        public static string CountDictionary_Out_result_DisplayName {
+            get {
+                return ResourceManager.GetString("CountDictionary_Out_result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         public static string Do {
