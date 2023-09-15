@@ -26,12 +26,12 @@ namespace UiPathTeam.Extensions.Activities
         [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_In_dictionary_DisplayName))]
         [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_In_dictionary_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<Dictionary<string, object>> In_dictionary { get; set; }
+        public InArgument<Dictionary<object, object>> In_dictionary { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_In_key_DisplayName))]
         [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_In_key_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
-        public InArgument<string> In_key { get; set; }
+        public InArgument<object> In_key { get; set; }
 
         [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_Out_result_DisplayName))]
         [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_Out_result_Description))]

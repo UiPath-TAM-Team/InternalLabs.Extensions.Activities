@@ -82,7 +82,7 @@ namespace UiPathTeam.Extensions.Tests
         public void TestVerifyKeyInDictionary_KeyExists()
         {
             // Create the dictionary and populate it with key-value pairs
-            var dictionary = new Dictionary<string, object>
+            var dictionary = new Dictionary<object, object>
             {
                 { "key1", "value1" },
                 { "key2", "value2" },
@@ -97,7 +97,7 @@ namespace UiPathTeam.Extensions.Tests
             var VerifyKeyInDictionary = new VerifyKeyInDictionary();
 
             // Set the arguments using expressions
-            VerifyKeyInDictionary.In_dictionary = new InArgument<Dictionary<string, object>>(ctx => dictionary);
+            VerifyKeyInDictionary.In_dictionary = new InArgument<Dictionary<object, object>>(ctx => dictionary);
             VerifyKeyInDictionary.In_key = new InArgument<string>(ctx => in_key);
 
             // Invoke the workflow synchronously and capture the results
@@ -118,7 +118,7 @@ namespace UiPathTeam.Extensions.Tests
         {
             // Negetive test, Key is not in dictionary, return false and null
             // Create the dictionary and populate it with key-value pairs
-            var dictionary = new Dictionary<string, object>
+            var dictionary = new Dictionary<object, object>
             {
                 { "key1", "value1" },
                 { "key2", "value2" },
@@ -132,7 +132,7 @@ namespace UiPathTeam.Extensions.Tests
             var VerifyKeyInDictionary = new VerifyKeyInDictionary();
 
             // Set the arguments using expressions
-            VerifyKeyInDictionary.In_dictionary = new InArgument<Dictionary<string, object>>(ctx => dictionary);
+            VerifyKeyInDictionary.In_dictionary = new InArgument<Dictionary<object, object>>(ctx => dictionary);
             VerifyKeyInDictionary.In_key = new InArgument<string>(ctx => in_key);
 
             // Invoke the workflow synchronously and capture the results
