@@ -7,4 +7,6 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Activities
 ### Statements
-`Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
+`AddToDictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
+
+`RemoveFromDictionary`: Removes a Key-Value pair from an existing dictionary based upon a provided Key and returns a boolean value as to whether it was successful or not
