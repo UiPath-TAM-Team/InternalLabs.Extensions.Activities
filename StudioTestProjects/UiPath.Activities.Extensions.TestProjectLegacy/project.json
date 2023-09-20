@@ -3,10 +3,10 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[22.10.5]",
-    "UiPath.Testing.Activities": "[22.10.3]",
-    "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.1.0.915000834]"
+    "UiPath.System.Activities": "[23.10.0-preview]",
+    "UiPath.Testing.Activities": "[23.10.0-preview]",
+    "UiPath.UIAutomation.Activities": "[23.12.0-alpha.4314857]",
+    "UiPathTeam.Extensions.Activities": "[0.1.0.920195652]"
   },
   "webServices": [],
   "entitiesStores": [],

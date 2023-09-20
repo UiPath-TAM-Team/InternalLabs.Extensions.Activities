@@ -23,9 +23,9 @@ namespace UiPathTeam.Extensions.Activities.Design
             builder.AddCustomAttributes(typeof(RemoveFromDictionary), new DesignerAttribute(typeof(RemoveFromDictionaryDesigner)));
             builder.AddCustomAttributes(typeof(RemoveFromDictionary), new HelpKeywordAttribute(""));
 
-            builder.AddCustomAttributes(typeof(VerifyKeyInDictionary), categoryAttribute);
-            builder.AddCustomAttributes(typeof(VerifyKeyInDictionary), new DesignerAttribute(typeof(VerifyKeyInDictionaryDesigner)));
-            builder.AddCustomAttributes(typeof(VerifyKeyInDictionary), new HelpKeywordAttribute(""));
+            builder.AddCustomAttributes(typeof(ContainsKey), categoryAttribute);
+            builder.AddCustomAttributes(typeof(ContainsKey), new DesignerAttribute(typeof(ContainsKeyDesigner)));
+            builder.AddCustomAttributes(typeof(ContainsKey), new HelpKeywordAttribute(""));
 
 
             MetadataStore.AddAttributeTable(builder.CreateTable());

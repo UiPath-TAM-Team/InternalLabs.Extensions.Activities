@@ -277,56 +277,56 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="VerifyKeyInDictionary_DisplayName" xml:space="preserve">
-    <value>VerifyKeyInDictionary</value>
+  <data name="ContainsKey_DisplayName" xml:space="preserve">
+    <value>ContainsKey</value>
     <comment>activity name</comment>
   </data>
-  <data name="VerifyKeyInDictionary_Description" xml:space="preserve">
-    <value>Verify that a key is in the dictionary and return the value if it is</value>
+  <data name="ContainsKey_Description" xml:space="preserve">
+    <value>User story: As an RPA Developer, I want to use an activity that will determine if a specific Key exists within a given Dictionary. The activity will provide a Boolean results as to whether a provided Key exists within a provided Dictionary. When the given key exists, then value will be returned. When the given key is does not exists, a null is returned for the value.</value>
     <comment>activity description</comment>
   </data>
-  <data name="VerifyKeyInDictionary_In_dictionary_DisplayName" xml:space="preserve">
+  <data name="ContainsKey_In_dictionary_DisplayName" xml:space="preserve">
     <value>in_dictionary</value>
     <comment>property name</comment>
   </data>
-  <data name="VerifyKeyInDictionary_In_dictionary_Description" xml:space="preserve">
-    <value />
+  <data name="ContainsKey_In_dictionary_Description" xml:space="preserve">
+    <value>The dictionary to query</value>
     <comment>property description</comment>
   </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="VerifyKeyInDictionary_In_key_DisplayName" xml:space="preserve">
+  <data name="ContainsKey_In_key_DisplayName" xml:space="preserve">
     <value>in_key</value>
     <comment>property name</comment>
   </data>
-  <data name="VerifyKeyInDictionary_In_key_Description" xml:space="preserve">
-    <value />
+  <data name="ContainsKey_In_key_Description" xml:space="preserve">
+    <value>The key to inspect</value>
     <comment>property description</comment>
   </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="VerifyKeyInDictionary_Out_result_DisplayName" xml:space="preserve">
+  <data name="ContainsKey_Out_result_DisplayName" xml:space="preserve">
     <value>out_result</value>
     <comment>property name</comment>
   </data>
-  <data name="VerifyKeyInDictionary_Out_result_Description" xml:space="preserve">
-    <value />
+  <data name="ContainsKey_Out_result_Description" xml:space="preserve">
+    <value>Boolean on presence of key</value>
     <comment>property description</comment>
   </data>
   <data name="Output_Category" xml:space="preserve">
     <value>Output</value>
     <comment>category</comment>
   </data>
-  <data name="VerifyKeyInDictionary_Out_value_DisplayName" xml:space="preserve">
+  <data name="ContainsKey_Out_value_DisplayName" xml:space="preserve">
     <value>out_value</value>
     <comment>property name</comment>
   </data>
-  <data name="VerifyKeyInDictionary_Out_value_Description" xml:space="preserve">
-    <value />
+  <data name="ContainsKey_Out_value_Description" xml:space="preserve">
+    <value>The value in the dictionary</value>
     <comment>property description</comment>
   </data>
   <data name="Output_Category" xml:space="preserve">

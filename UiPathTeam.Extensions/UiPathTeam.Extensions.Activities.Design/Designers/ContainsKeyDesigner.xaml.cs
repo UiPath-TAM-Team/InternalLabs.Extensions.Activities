@@ -1,11 +1,11 @@
 namespace UiPathTeam.Extensions.Activities.Design.Designers
 {
     /// <summary>
-    /// Interaction logic for VerifyKeyInDictionaryDesigner.xaml
+    /// Interaction logic for ContainsKeyDesigner.xaml
     /// </summary>
-    public partial class VerifyKeyInDictionaryDesigner
+    public partial class ContainsKeyDesigner
     {
-        public VerifyKeyInDictionaryDesigner()
+        public ContainsKeyDesigner()
         {
             InitializeComponent();
         }

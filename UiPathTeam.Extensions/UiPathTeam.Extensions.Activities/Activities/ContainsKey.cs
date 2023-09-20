@@ -9,9 +9,9 @@ using UiPath.Shared.Activities.Localization;
 
 namespace UiPathTeam.Extensions.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_DisplayName))]
-    [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_Description))]
-    public class VerifyKeyInDictionary : ContinuableAsyncCodeActivity
+    [LocalizedDisplayName(nameof(Resources.ContainsKey_DisplayName))]
+    [LocalizedDescription(nameof(Resources.ContainsKey_Description))]
+    public class ContainsKey : ContinuableAsyncCodeActivity
     {
         #region Properties
 
@@ -23,23 +23,23 @@ namespace UiPathTeam.Extensions.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_In_dictionary_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_In_dictionary_Description))]
+        [LocalizedDisplayName(nameof(Resources.ContainsKey_In_dictionary_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ContainsKey_In_dictionary_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<Dictionary<object, object>> In_dictionary { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_In_key_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_In_key_Description))]
+        [LocalizedDisplayName(nameof(Resources.ContainsKey_In_key_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ContainsKey_In_key_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<object> In_key { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_Out_result_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_Out_result_Description))]
+        [LocalizedDisplayName(nameof(Resources.ContainsKey_Out_result_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ContainsKey_Out_result_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
         public OutArgument<bool> Out_result { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.VerifyKeyInDictionary_Out_value_DisplayName))]
-        [LocalizedDescription(nameof(Resources.VerifyKeyInDictionary_Out_value_Description))]
+        [LocalizedDisplayName(nameof(Resources.ContainsKey_Out_value_DisplayName))]
+        [LocalizedDescription(nameof(Resources.ContainsKey_Out_value_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
         public OutArgument<object> Out_value { get; set; }
 
@@ -48,7 +48,7 @@ namespace UiPathTeam.Extensions.Activities
 
         #region Constructors
 
-        public VerifyKeyInDictionary()
+        public ContainsKey()
         {
         }
 
@@ -67,8 +67,7 @@ namespace UiPathTeam.Extensions.Activities
 
         protected override async Task<Action<AsyncCodeActivityContext>> ExecuteAsync(AsyncCodeActivityContext context, CancellationToken cancellationToken)
         {
-            // Inputs, two in, two out.
-            // Issue/Story: https://github.com/UiPath-TAM-Team/UiPathTAMTeam.Extensions.Activities/issues/20
+            // Inputs
             var in_dictionary = In_dictionary.Get(context);
             var in_key = In_key.Get(context);
             var out_result = Out_result.Get(context);
@@ -77,11 +76,10 @@ namespace UiPathTeam.Extensions.Activities
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
-
             if (in_dictionary.ContainsKey(in_key))
             {
                 out_result = true;
-                out_value = in_dictionary[in_key];
+                out_value = (object)in_dictionary[in_key];
             }
             else
             {
@@ -94,6 +92,7 @@ namespace UiPathTeam.Extensions.Activities
                 Out_value.Set(ctx, out_value);
             };
         }
+
 
         #endregion
     }
