@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1733,1736" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1781,3186" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -74,11 +74,11 @@
       <AssemblyReference>System.ValueTuple</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.Testing</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="901,1671" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap:VirtualizedContainerService.HintSize="1163,3121" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:Object, x:Object)" Name="dictionary" />
       <Variable x:TypeArguments="x:String" Default="Key 1" Name="stringKey" />
@@ -107,7 +107,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="859,193" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="1121,193" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -127,49 +127,43 @@
         </Assign.Value>
       </Assign>
     </Sequence>
-    <Sequence DisplayName="... when" sap:VirtualizedContainerService.HintSize="859,860" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="... when" sap:VirtualizedContainerService.HintSize="1121,2309" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Test Method 1 - Positive" sap:VirtualizedContainerService.HintSize="596,80" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <Sequence DisplayName="Test Method 1 - Positive" sap:VirtualizedContainerService.HintSize="1059,706" sap2010:WorkflowViewState.IdRef="Sequence_12">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uea:ContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="997,133" sap2010:WorkflowViewState.IdRef="ContainsKey_1">
-          <uea:ContainsKey.In_dictionary>
+        <uea:DictionaryContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="997,25" sap2010:WorkflowViewState.IdRef="DictionaryContainsKey_1">
+          <uea:DictionaryContainsKey.In_dictionary>
             <InArgument x:TypeArguments="scg:Dictionary(x:Object, x:Object)">
-              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_126">dictionary</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_197">dictionary</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_dictionary>
-          <uea:ContainsKey.In_key>
+          </uea:DictionaryContainsKey.In_dictionary>
+          <uea:DictionaryContainsKey.In_key>
             <InArgument x:TypeArguments="x:Object">
-              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_166">stringKey</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_198">stringKey</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_key>
-          <uea:ContainsKey.Out_result>
+          </uea:DictionaryContainsKey.In_key>
+          <uea:DictionaryContainsKey.Out_result>
             <OutArgument x:TypeArguments="x:Boolean">
-              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">out_result1</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">out_result1</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_result>
-          <uea:ContainsKey.Out_value>
+          </uea:DictionaryContainsKey.Out_result>
+          <uea:DictionaryContainsKey.Out_value>
             <OutArgument x:TypeArguments="x:Object">
-              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">out_value1</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">out_value1</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </uea:ContainsKey>
-        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,25" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_25" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+          </uea:DictionaryContainsKey.Out_value>
+        </uea:DictionaryContainsKey>
+        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_25" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyExpressionWithOperator.FirstExpression>
             <InArgument x:TypeArguments="x:Object">
               <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_161">out_value1</mca:CSharpValue>
@@ -187,12 +181,12 @@
           </uta:VerifyExpressionWithOperator.SecondExpression>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpressionWithOperator>
-        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,25" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_26" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_26" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyExpressionWithOperator.FirstExpression>
             <InArgument x:TypeArguments="x:Boolean">
               <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_163">out_result1</mca:CSharpValue>
@@ -210,12 +204,12 @@
           </uta:VerifyExpressionWithOperator.SecondExpression>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpressionWithOperator>
-        <If DisplayName="Set Test Case 1 Results" sap:VirtualizedContainerService.HintSize="997,329" sap2010:WorkflowViewState.IdRef="If_2">
+        <If DisplayName="Set Test Case 1 Results" sap:VirtualizedContainerService.HintSize="997,330" sap2010:WorkflowViewState.IdRef="If_2">
           <If.Condition>
             <InArgument x:TypeArguments="x:Boolean">
               <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_168">Test1s1 == true &amp;&amp; Test1s2 == true</mca:CSharpValue>
@@ -228,13 +222,13 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
           <If.Then>
-            <Sequence sap:VirtualizedContainerService.HintSize="476,169" sap2010:WorkflowViewState.IdRef="Sequence_10">
+            <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">activityResultCase1</mca:CSharpReference>
@@ -249,13 +243,13 @@
             </Sequence>
           </If.Then>
           <If.Else>
-            <Sequence sap:VirtualizedContainerService.HintSize="476,169" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence sap:VirtualizedContainerService.HintSize="476,170" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Assign sap:VirtualizedContainerService.HintSize="434,81" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_5">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">
                     <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">activityResultCase1</mca:CSharpReference>
@@ -269,41 +263,35 @@
           </If.Else>
         </If>
       </Sequence>
-      <Sequence DisplayName="Test Method 2 - Positive" sap:VirtualizedContainerService.HintSize="596,80" sap2010:WorkflowViewState.IdRef="Sequence_15">
+      <Sequence DisplayName="Test Method 2 - Positive" sap:VirtualizedContainerService.HintSize="1059,706" sap2010:WorkflowViewState.IdRef="Sequence_15">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uea:ContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="997,133" sap2010:WorkflowViewState.IdRef="ContainsKey_4">
-          <uea:ContainsKey.In_dictionary>
+        <uea:DictionaryContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="997,25" sap2010:WorkflowViewState.IdRef="DictionaryContainsKey_2">
+          <uea:DictionaryContainsKey.In_dictionary>
             <InArgument x:TypeArguments="scg:Dictionary(x:Object, x:Object)">
-              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_172">dictionary</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_199">dictionary</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_dictionary>
-          <uea:ContainsKey.In_key>
+          </uea:DictionaryContainsKey.In_dictionary>
+          <uea:DictionaryContainsKey.In_key>
             <InArgument x:TypeArguments="x:Object">
-              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_180">stringKey2</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_200">stringKey2</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_key>
-          <uea:ContainsKey.Out_result>
+          </uea:DictionaryContainsKey.In_key>
+          <uea:DictionaryContainsKey.Out_result>
             <OutArgument x:TypeArguments="x:Boolean">
-              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_46">out_result2</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_62">out_result2</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_result>
-          <uea:ContainsKey.Out_value>
+          </uea:DictionaryContainsKey.Out_result>
+          <uea:DictionaryContainsKey.Out_value>
             <OutArgument x:TypeArguments="x:Object">
-              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_47">out_value2</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_63">out_value2</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </uea:ContainsKey>
+          </uea:DictionaryContainsKey.Out_value>
+        </uea:DictionaryContainsKey>
         <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_27" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyExpressionWithOperator.FirstExpression>
             <InArgument x:TypeArguments="x:Object">
@@ -407,7 +395,7 @@
           </If.Else>
         </If>
       </Sequence>
-      <Sequence DisplayName="Test Method 3 - Negetive" sap:VirtualizedContainerService.HintSize="596,509" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence DisplayName="Test Method 3 - Negetive" sap:VirtualizedContainerService.HintSize="1059,706" sap2010:WorkflowViewState.IdRef="Sequence_17">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:Boolean" Name="out_result3" />
           <Variable x:TypeArguments="x:Object" Name="out_value3" />
@@ -418,38 +406,32 @@
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uea:ContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="534,133" sap2010:WorkflowViewState.IdRef="ContainsKey_5">
-          <uea:ContainsKey.In_dictionary>
+        <uea:DictionaryContainsKey ContinueOnError="{x:Null}" sap:VirtualizedContainerService.HintSize="997,25" sap2010:WorkflowViewState.IdRef="DictionaryContainsKey_3">
+          <uea:DictionaryContainsKey.In_dictionary>
             <InArgument x:TypeArguments="scg:Dictionary(x:Object, x:Object)">
-              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_185">dictionary</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_201">dictionary</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_dictionary>
-          <uea:ContainsKey.In_key>
+          </uea:DictionaryContainsKey.In_dictionary>
+          <uea:DictionaryContainsKey.In_key>
             <InArgument x:TypeArguments="x:Object">
-              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_186">stringKey2</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_203">missingKey</mca:CSharpValue>
             </InArgument>
-          </uea:ContainsKey.In_key>
-          <uea:ContainsKey.Out_result>
+          </uea:DictionaryContainsKey.In_key>
+          <uea:DictionaryContainsKey.Out_result>
             <OutArgument x:TypeArguments="x:Boolean">
-              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">out_result3</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_64">out_result3</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_result>
-          <uea:ContainsKey.Out_value>
+          </uea:DictionaryContainsKey.Out_result>
+          <uea:DictionaryContainsKey.Out_value>
             <OutArgument x:TypeArguments="x:Object">
-              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">out_value3</mca:CSharpReference>
+              <mca:CSharpReference x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpReference`1_65">out_value3</mca:CSharpReference>
             </OutArgument>
-          </uea:ContainsKey.Out_value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </uea:ContainsKey>
-        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="534,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_29" Operator="Inequality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+          </uea:DictionaryContainsKey.Out_value>
+        </uea:DictionaryContainsKey>
+        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_29" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyExpressionWithOperator.FirstExpression>
-            <InArgument x:TypeArguments="x:String">
-              <mca:CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_187">missingKey</mca:CSharpValue>
+            <InArgument x:TypeArguments="x:Object">
+              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_205">out_value3</mca:CSharpValue>
             </InArgument>
           </uta:VerifyExpressionWithOperator.FirstExpression>
           <uta:VerifyExpressionWithOperator.Result>
@@ -459,7 +441,7 @@
           </uta:VerifyExpressionWithOperator.Result>
           <uta:VerifyExpressionWithOperator.SecondExpression>
             <InArgument x:TypeArguments="x:Object">
-              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">dictionary[stringKey]</mca:CSharpValue>
+              <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_204">null</mca:CSharpValue>
             </InArgument>
           </uta:VerifyExpressionWithOperator.SecondExpression>
           <sap:WorkflowViewStateService.ViewState>
@@ -469,7 +451,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpressionWithOperator>
-        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="534,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_30" Operator="Inequality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+        <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="997,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_30" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
           <uta:VerifyExpressionWithOperator.FirstExpression>
             <InArgument x:TypeArguments="x:Boolean">
               <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_193">out_result3</mca:CSharpValue>
@@ -492,7 +474,7 @@
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
         </uta:VerifyExpressionWithOperator>
-        <If DisplayName="Set Test Case 3 Results" sap:VirtualizedContainerService.HintSize="534,25" sap2010:WorkflowViewState.IdRef="If_4">
+        <If DisplayName="Set Test Case 3 Results" sap:VirtualizedContainerService.HintSize="997,330" sap2010:WorkflowViewState.IdRef="If_4">
           <If.Condition>
             <InArgument x:TypeArguments="x:Boolean">
               <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_191">Test3s1 == true &amp;&amp; Test3s2 == true</mca:CSharpValue>
@@ -500,7 +482,7 @@
           </If.Condition>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
@@ -547,17 +529,17 @@
         </If>
       </Sequence>
     </Sequence>
-    <Sequence DisplayName="... then" sap:VirtualizedContainerService.HintSize="859,450" sap2010:WorkflowViewState.IdRef="Sequence_7">
+    <Sequence DisplayName="... then" sap:VirtualizedContainerService.HintSize="1121,451" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <If sap:VirtualizedContainerService.HintSize="797,339" sap2010:WorkflowViewState.IdRef="If_1">
+      <If sap:VirtualizedContainerService.HintSize="797,340" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Condition>
           <InArgument x:TypeArguments="x:Boolean">
-            <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_170">activityResultCase1</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_206">activityResultCase1 == true &amp;&amp; activityResultCase2 == true &amp;&amp; activityResultCase3 == true</mca:CSharpValue>
           </InArgument>
         </If.Condition>
         <If.Then>

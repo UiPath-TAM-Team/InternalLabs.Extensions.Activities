@@ -34,6 +34,7 @@
   <ItemGroup>
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />
     <None Remove="Designers\ContainsKeyDesigner.xaml" />
+    <None Remove="Designers\DictionaryContainsKeyDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -89,6 +90,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\ContainsKeyDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="Designers\DictionaryContainsKeyDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\RemoveFromDictionaryDesigner.xaml">

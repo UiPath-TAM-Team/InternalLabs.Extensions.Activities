@@ -79,7 +79,7 @@ namespace UiPathTeam.Extensions.Tests
 
         }
         [TestMethod]
-        public void TestContainsKey_KeyExists()
+        public void TestDictionaryContainsKey_KeyExists()
         {
             // Create the dictionary and populate it with key-value pairs
             var dictionary = new Dictionary<object, object>
@@ -94,14 +94,14 @@ namespace UiPathTeam.Extensions.Tests
 
             // Positive Test: Key is in dictionary, return true and value
             // Create an instance of your workflow activity
-            var ContainsKeyActivity = new ContainsKey
+            var DictionaryContainsKeyActivity = new DictionaryContainsKey
             {
                 In_dictionary = new InArgument<Dictionary<object, object>>(ctx => dictionary),
                 In_key = new InArgument<object>(ctx => in_key),
             };
 
             // Invoke the workflow synchronously and capture the results
-            IDictionary<string, object> output = WorkflowInvoker.Invoke(ContainsKeyActivity);
+            IDictionary<string, object> output = WorkflowInvoker.Invoke(DictionaryContainsKeyActivity);
 
             // Retrieve the output values from the dictionary
             var outputResult = (bool)output["Out_result"]; // Assuming "Out_result" is the output argument
@@ -114,7 +114,7 @@ namespace UiPathTeam.Extensions.Tests
             Assert.AreNotEqual("value1", outputValue); // Verify the expected value
         }
         [TestMethod]
-        public void TestVerifyContainsKey_KeyDoesNotExists()
+        public void TestVerifyDictionaryContainsKey_KeyDoesNotExists()
         {
             // Create the dictionary and populate it with key-value pairs
             var dictionary = new Dictionary<object, object>
@@ -129,14 +129,14 @@ namespace UiPathTeam.Extensions.Tests
 
             // Positive Test: Key is in dictionary, return true and value
             // Create an instance of your workflow activity
-            var ContainsKeyActivity = new ContainsKey
+            var DictionaryContainsKeyActivity = new DictionaryContainsKey
             {
                 In_dictionary = new InArgument<Dictionary<object, object>>(ctx => dictionary),
                 In_key = new InArgument<object>(ctx => in_key),
             };
 
             // Invoke the workflow synchronously and capture the results
-            IDictionary<string, object> output = WorkflowInvoker.Invoke(ContainsKeyActivity);
+            IDictionary<string, object> output = WorkflowInvoker.Invoke(DictionaryContainsKeyActivity);
 
             // Retrieve the output values from the dictionary
             var outputResult = (bool)output["Out_result"]; // Assuming "Out_result" is the output argument

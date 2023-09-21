@@ -259,6 +259,96 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to User story: As an RPA Developer, I want to use an activity that will determine if a specific Key exists within a given Dictionary. The activity will provide a Boolean results as to whether a provided Key exists within a provided Dictionary. When the given key exists, then value will be returned. When the given key is does not exists, a null is returned for the value..
+        /// </summary>
+        public static string DictionaryContainsKey_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to DictionaryContainsKey.
+        /// </summary>
+        public static string DictionaryContainsKey_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to dictionary to be evaluated.
+        /// </summary>
+        public static string DictionaryContainsKey_In_dictionary_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_In_dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_dictionary.
+        /// </summary>
+        public static string DictionaryContainsKey_In_dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_In_dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to key to be used in evaluation.
+        /// </summary>
+        public static string DictionaryContainsKey_In_key_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_In_key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_key.
+        /// </summary>
+        public static string DictionaryContainsKey_In_key_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_In_key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to bool on evaluation.
+        /// </summary>
+        public static string DictionaryContainsKey_Out_result_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_Out_result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_result.
+        /// </summary>
+        public static string DictionaryContainsKey_Out_result_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_Out_result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to if true, value, else null.
+        /// </summary>
+        public static string DictionaryContainsKey_Out_value_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_Out_value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_value.
+        /// </summary>
+        public static string DictionaryContainsKey_Out_value_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsKey_Out_value_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         public static string Do {

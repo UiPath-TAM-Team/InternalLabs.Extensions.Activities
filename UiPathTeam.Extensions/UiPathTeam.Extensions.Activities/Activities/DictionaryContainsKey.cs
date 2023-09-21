@@ -9,9 +9,9 @@ using UiPath.Shared.Activities.Localization;
 
 namespace UiPathTeam.Extensions.Activities
 {
-    [LocalizedDisplayName(nameof(Resources.ContainsKey_DisplayName))]
-    [LocalizedDescription(nameof(Resources.ContainsKey_Description))]
-    public class ContainsKey : ContinuableAsyncCodeActivity
+    [LocalizedDisplayName(nameof(Resources.DictionaryContainsKey_DisplayName))]
+    [LocalizedDescription(nameof(Resources.DictionaryContainsKey_Description))]
+    public class DictionaryContainsKey : ContinuableAsyncCodeActivity
     {
         #region Properties
 
@@ -23,23 +23,23 @@ namespace UiPathTeam.Extensions.Activities
         [LocalizedDescription(nameof(Resources.ContinueOnError_Description))]
         public override InArgument<bool> ContinueOnError { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ContainsKey_In_dictionary_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ContainsKey_In_dictionary_Description))]
+        [LocalizedDisplayName(nameof(Resources.DictionaryContainsKey_In_dictionary_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DictionaryContainsKey_In_dictionary_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<Dictionary<object, object>> In_dictionary { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ContainsKey_In_key_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ContainsKey_In_key_Description))]
+        [LocalizedDisplayName(nameof(Resources.DictionaryContainsKey_In_key_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DictionaryContainsKey_In_key_Description))]
         [LocalizedCategory(nameof(Resources.Input_Category))]
         public InArgument<object> In_key { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ContainsKey_Out_result_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ContainsKey_Out_result_Description))]
+        [LocalizedDisplayName(nameof(Resources.DictionaryContainsKey_Out_result_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DictionaryContainsKey_Out_result_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
         public OutArgument<bool> Out_result { get; set; }
 
-        [LocalizedDisplayName(nameof(Resources.ContainsKey_Out_value_DisplayName))]
-        [LocalizedDescription(nameof(Resources.ContainsKey_Out_value_Description))]
+        [LocalizedDisplayName(nameof(Resources.DictionaryContainsKey_Out_value_DisplayName))]
+        [LocalizedDescription(nameof(Resources.DictionaryContainsKey_Out_value_Description))]
         [LocalizedCategory(nameof(Resources.Output_Category))]
         public OutArgument<object> Out_value { get; set; }
 
@@ -48,7 +48,7 @@ namespace UiPathTeam.Extensions.Activities
 
         #region Constructors
 
-        public ContainsKey()
+        public DictionaryContainsKey()
         {
         }
 
@@ -59,8 +59,6 @@ namespace UiPathTeam.Extensions.Activities
 
         protected override void CacheMetadata(CodeActivityMetadata metadata)
         {
-            if (In_dictionary == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(In_dictionary)));
-            if (In_key == null) metadata.AddValidationError(string.Format(Resources.ValidationValue_Error, nameof(In_key)));
 
             base.CacheMetadata(metadata);
         }
@@ -92,7 +90,6 @@ namespace UiPathTeam.Extensions.Activities
                 Out_value.Set(ctx, out_value);
             };
         }
-
 
         #endregion
     }
