@@ -8,4 +8,4 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 ## Activities
 ### Statements
 `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
-'VerifyKeyInDictionary' : Verify if a key exists in a Dictionary<String, Object> and return a  <boolean> and value<object> 
+`Verify Key Exists in Dictionary` : Check if a key exists in a Dictionary<Object, Object> and return a  <boolean> and value<object> or null
