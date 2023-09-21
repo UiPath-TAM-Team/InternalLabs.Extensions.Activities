@@ -278,7 +278,7 @@
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="CountDictionary_DisplayName" xml:space="preserve">
-    <value>CountDictionary</value>
+    <value>Count Dictionary</value>
     <comment>activity name</comment>
   </data>
   <data name="CountDictionary_Description" xml:space="preserve">

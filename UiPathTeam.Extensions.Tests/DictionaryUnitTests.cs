@@ -75,6 +75,24 @@ namespace UiPathTeam.Extensions.Tests
 
 			Assert.IsTrue(dictionary.Count == 0);
         }
+        [TestMethod]
+        public void TestCountDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var stringKey = "test key";
+            var stringValue = "test value";
+			var Out_result = new int;
 
+            dictionary.Add(stringKey, stringValue);
+
+            var CountDictionaryActivity = new CountDictionary
+            {
+                In_dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+            };
+
+            WorkflowInvoker.Invoke(CountDictionary);
+
+            Assert.IsTrue(Out_result == 1);
+        }
     }
 }
