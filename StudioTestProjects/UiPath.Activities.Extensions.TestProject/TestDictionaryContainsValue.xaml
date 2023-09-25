@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestDictionaryContainsValue" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="523.3333333333334,466" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestDictionaryContainsValue" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="857.3333333333334,466" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -78,7 +78,7 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestDictionaryContainsValue" sap:VirtualizedContainerService.HintSize="450,333.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestDictionaryContainsValue" sap:VirtualizedContainerService.HintSize="450,382.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:Object, x:Object)" Name="TeamDictionary">
         <Variable.Default>
@@ -92,7 +92,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uea:DictionaryContainsValue ContinueOnError="{x:Null}" DisplayName="Dictionary Contains Value" sap:VirtualizedContainerService.HintSize="388,86.66666666666667" sap2010:WorkflowViewState.IdRef="DictionaryContainsValue_1" Value="ca">
+    <uea:DictionaryContainsValue ContinueOnError="{x:Null}" DisplayName="Dictionary Contains Value" sap:VirtualizedContainerService.HintSize="388,136" sap2010:WorkflowViewState.IdRef="DictionaryContainsValue_1">
       <uea:DictionaryContainsValue.Dictionary>
         <InArgument x:TypeArguments="scg:Dictionary(x:Object, x:Object)">
           <CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">TeamDictionary</CSharpValue>
@@ -103,6 +103,11 @@
           <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">Result</CSharpReference>
         </OutArgument>
       </uea:DictionaryContainsValue.Result>
+      <uea:DictionaryContainsValue.Value>
+        <InArgument x:TypeArguments="x:Object">
+          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">"J"</CSharpValue>
+        </InArgument>
+      </uea:DictionaryContainsValue.Value>
     </uea:DictionaryContainsValue>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
       <ui:LogMessage.Message>
