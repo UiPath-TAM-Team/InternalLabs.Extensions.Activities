@@ -75,6 +75,28 @@ namespace UiPathTeam.Extensions.Tests
 
 			Assert.IsTrue(dictionary.Count == 0);
         }
+        [TestMethod]
+        public void TestDictionaryContainsValue()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var boolResult = true;
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+
+            dictionary.Add(stringKey, stringValue);
+
+            var dictionaryContainsValue = new DictionaryContainsValue
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Value = new InArgument<Object>((ctx) => stringValue),
+                Result = new OutArgument<Boolean>((ctx) => boolResult),
+            };
+
+            WorkflowInvoker.Invoke(dictionaryContainsValue);
+
+            Assert.IsTrue(boolResult);
+        }
 
     }
 }
