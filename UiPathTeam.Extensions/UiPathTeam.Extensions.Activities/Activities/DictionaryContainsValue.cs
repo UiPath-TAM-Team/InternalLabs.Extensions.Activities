@@ -65,12 +65,22 @@ namespace UiPathTeam.Extensions.Activities
             // Inputs
             var dictionary = Dictionary.Get(context);
             var value = Value.Get(context);
-    
-            var result = dictionary.ContainsValue(value);
+
+            var result = Result.Get(context);
+
+
+            if (dictionary.ContainsValue(value))
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
 
             // Outputs
             return (ctx) => {
-                Result.Set(ctx, null);
+                Result.Set(ctx, result);
             };
         }
 
