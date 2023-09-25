@@ -8,3 +8,4 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 ## Activities
 ### Statements
 `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>
+`Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> returns Boolean value to confirm if present or not.
