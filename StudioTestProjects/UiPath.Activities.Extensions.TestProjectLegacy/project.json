@@ -47,6 +47,13 @@
         "testCaseId": "38ebd7d0-68bc-4334-81b6-bfea22c1dd65",
         "testCaseType": "TestCase",
         "fileName": "TestAddToDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "badf76b1-1803-45af-8081-73f57badafca",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestClearDictionary.xaml"
       }
     ],
     "modernBehavior": true
