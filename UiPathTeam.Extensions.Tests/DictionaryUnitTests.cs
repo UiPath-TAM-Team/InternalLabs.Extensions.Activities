@@ -81,8 +81,8 @@ namespace UiPathTeam.Extensions.Tests
             var dictionary = new Dictionary<Object, Object>();
             var stringKey = "test key";
             var stringValue = "test value";
-			var Out_result = new int;
-
+            var Out_Result = new int();
+			
             dictionary.Add(stringKey, stringValue);
 
             var CountDictionaryActivity = new CountDictionary
@@ -90,9 +90,9 @@ namespace UiPathTeam.Extensions.Tests
                 In_dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
             };
 
-            WorkflowInvoker.Invoke(CountDictionary);
+            WorkflowInvoker.Invoke(CountDictionaryActivity);
 
-            Assert.IsTrue(Out_result == 1);
+            Assert.IsTrue(Out_Result == 1);
         }
     }
 }
