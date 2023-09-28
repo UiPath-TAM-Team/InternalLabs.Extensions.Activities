@@ -33,6 +33,7 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />
+    <None Remove="Designers\DictionaryContainsKeyDesigner.xaml" />
     <None Remove="Designers\DictionaryContainsValueDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
   </ItemGroup>
@@ -86,6 +87,9 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Designers\AddToDictionaryDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="Designers\DictionaryContainsKeyDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\DictionaryContainsValueDesigner.xaml">

@@ -14,6 +14,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 
+* `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
+
 * `Remove from Dictionary`: Removes a Key-Value pair from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
@@ -29,5 +31,7 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Kristopher Kim
 
 * Gary Refka
+
+* Michael Tomlin
 
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
