@@ -88,6 +88,7 @@ namespace UiPathTeam.Extensions.Tests
             var CountDictionaryActivity = new CountDictionary
             {
                 In_dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Out_result = new OutArgument<int> ((ctx) => Out_Result),
             };
 
             WorkflowInvoker.Invoke(CountDictionaryActivity);
