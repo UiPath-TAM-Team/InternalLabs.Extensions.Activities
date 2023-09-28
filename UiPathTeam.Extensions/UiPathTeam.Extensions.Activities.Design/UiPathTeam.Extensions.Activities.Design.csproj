@@ -2,10 +2,11 @@
   <PropertyGroup>
     <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
-		<RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
-		<AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
+    <RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
+    <AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
@@ -18,18 +19,17 @@
     <PackageTags>UiPath TAM Extensions Activities</PackageTags>
     <PackageProjectUrl>https://github.com/UiPath-TAM-Team/UiPathTAMTeam.Extensions.Activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
-    <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	  <Version Condition="'$(version)' == ''">0.0.0</Version>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug' AND '$(DesignTimeBuild)' != 'true'">
-    <PackageVersion>0.1.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
+    <PackageVersion>$(Version).$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.0</PackageVersion>
+  <!-- ignore build warnings -->
+  <PropertyGroup>
+    <NoWarn>1701;1702;1572;1573;1591;1998</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />

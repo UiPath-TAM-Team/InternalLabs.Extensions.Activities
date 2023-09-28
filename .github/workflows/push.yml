@@ -1,0 +1,79 @@
+name: Push to main
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Release]
+
+    runs-on: windows-2022
+
+    env:
+      Solution_Name: UiPathTeam.Extensions.sln
+      Nuget_Name: UiPathTeam.Extensions.Activities
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Application Version
+      id: version
+      uses: paulhatch/semantic-version@v5.2.1
+      with:
+        major_pattern: "MAJOR"
+
+    - name: create release
+      uses: actions/create-release@v1.1.4
+      id: create_release
+      with:
+        draft: false
+        prerelease: false
+        release_name: ${{ steps.version.outputs.version_tag }}
+        tag_name: ${{ steps.version.outputs.version_tag }}
+        body: ${{ github.event.head_commit.message }}
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.3.1
+
+    - name: Navigate to Workspace
+      run: cd $GITHUB_WORKSPACE
+
+    - name: Create Build Directory
+      run: mkdir _build
+
+    - name: add Marketplace feed
+      run: dotnet nuget add source https://gallery.uipath.com/api/v3/index.json -n Marketplace
+      
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build Solution
+      run: msbuild.exe $env:Solution_Name /verbosity:minimal /p:GeneratePackageOnBuild=false /p:Configuration=Release
+      env:
+        version: ${{ steps.version.outputs.version_tag }}
+
+    - name: Create the nuget package
+      run: dotnet pack -c Release /p:Version=${{ steps.version.outputs.version }} --output "_build"
+
+    - name: upload nuget package
+      uses: tanyagray/action-upload-release-asset@v1.1.3
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: _build\${{env.Nuget_Name}}.${{steps.version.outputs.version}}.nupkg
+        asset_name: ${{env.Nuget_Name}}.${{steps.version.outputs.version}}.nupkg"
+        asset_content_type: application/zip
