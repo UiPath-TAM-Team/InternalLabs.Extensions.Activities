@@ -84,7 +84,7 @@ namespace UiPathTeam.Extensions.Tests
             var boolResult = true;
             var stringKey = "test key";
             var stringValue = "test value";
-
+            
 
             dictionary.Add(stringKey, stringValue);
 
@@ -99,7 +99,6 @@ namespace UiPathTeam.Extensions.Tests
 
             Assert.IsTrue(boolResult);
         }
-
         [TestMethod]
         public void TestDictionaryGetValue()
         {
@@ -215,7 +214,6 @@ namespace UiPathTeam.Extensions.Tests
             // Additional assertions based on your activity's behavior
             Assert.AreNotEqual("value1", outputValue); // Verify the expected value
         }
-
-
+    
     }
 }

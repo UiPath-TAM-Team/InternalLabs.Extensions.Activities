@@ -26,14 +26,18 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Contributors
 
-* Michael Kuehn
-
 * Cathleen Runde
 
-* Robert Searing
-
-* Kristopher Kim
+* Denny Chiramel
 
 * Gary Refka
 
+* Kristopher Kim
+
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
+
+* Michael Kuehn
+
+* Michael Tomlin
+
+* Robert Searing
