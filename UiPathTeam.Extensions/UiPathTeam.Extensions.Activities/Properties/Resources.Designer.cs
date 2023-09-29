@@ -178,7 +178,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CountDictionary.
+        ///   Looks up a localized string similar to Count Dictionary.
         /// </summary>
         public static string CountDictionary_DisplayName {
             get {
@@ -223,11 +223,155 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Returns a Boolean if the provided dictionary contains the given value..
+        /// </summary>
+        public static string DictionaryContainsValue_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string DictionaryContainsValue_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary Contains Value.
+        /// </summary>
+        public static string DictionaryContainsValue_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Result_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string DictionaryContainsValue_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string DictionaryContainsValue_Value_Description {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Value.
+        /// </summary>
+        public static string DictionaryContainsValue_Value_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryContainsValue_Value_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         public static string Do {
             get {
                 return ResourceManager.GetString("Do", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The activity will return a value from a given dictionary with the provided Key.
+        /// </summary>
+        public static string GetDictionaryValue_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the Dictionary to get the value.
+        /// </summary>
+        public static string GetDictionaryValue_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string GetDictionaryValue_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Dictionary Value.
+        /// </summary>
+        public static string GetDictionaryValue_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter the key to get value from the Dictionary.
+        /// </summary>
+        public static string GetDictionaryValue_Key_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Key.
+        /// </summary>
+        public static string GetDictionaryValue_Key_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Output from the Dictionary for the provided key.
+        /// </summary>
+        public static string GetDictionaryValue_Result_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string GetDictionaryValue_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValue_Result_DisplayName", resourceCulture);
             }
         }
         

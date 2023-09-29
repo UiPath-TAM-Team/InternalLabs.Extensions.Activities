@@ -4,11 +4,15 @@
 		<RootNamespace>UiPathTeam.Extensions.Activities</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions.Activities</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities.Implementation</PackageId>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\UiPathTeam.Extensions.Activities.xml</DocumentationFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <!-- ignore build warnings -->
+  <PropertyGroup>
+    <NoWarn>1701;1702;1572;1573;1591;1998</NoWarn>
   </PropertyGroup>
 	<ItemGroup Condition=" '$(TargetFramework)' == 'net461' ">
 		<Reference Include="System" />

@@ -9,4 +9,5 @@ ExceptionScreenshots
 *.objects
 *.project
 *.settings
+*.templates
 *.tmh

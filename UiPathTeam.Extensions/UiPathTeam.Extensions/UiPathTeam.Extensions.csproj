@@ -3,11 +3,15 @@
     <TargetFrameworks>net461;net6.0</TargetFrameworks>
 		<RootNamespace>UiPathTeam.Extensions</RootNamespace>
 		<AssemblyName>UiPathTeam.Extensions</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup>
     <OutputPath>bin\$(Configuration)\</OutputPath>
     <DocumentationFile>bin\$(Configuration)\UiPathTeam.Extensions.xml</DocumentationFile>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+  </PropertyGroup>
+  <!-- ignore build warnings -->
+  <PropertyGroup>
+    <NoWarn>1701;1702;1572;1573;1591;1998</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">

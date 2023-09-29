@@ -1,0 +1,45 @@
+name: Pull Request to main
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug]
+
+    runs-on: windows-2022
+
+    env:
+      Solution_Name: UiPathTeam.Extensions.sln
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.3.1
+
+    - name: Navigate to Workspace
+      run: cd $GITHUB_WORKSPACE
+
+    - name: add Marketplace feed
+      run: dotnet nuget add source https://gallery.uipath.com/api/v3/index.json -n Marketplace
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build Solution
+      run: msbuild.exe $env:Solution_Name /verbosity:minimal /p:GeneratePackageOnBuild=false
+      
+    - name: Execute unit tests
+      run: dotnet test

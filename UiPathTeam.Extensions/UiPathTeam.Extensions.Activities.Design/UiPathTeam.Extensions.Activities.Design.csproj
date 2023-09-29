@@ -1,9 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
   <PropertyGroup>
-    <TargetFrameworks>net461;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net461;net6.0-windows7.0</TargetFrameworks>
     <UseWPF>true</UseWPF>
-		<RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
-		<AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
+    <RootNamespace>UiPathTeam.Extensions.Activities.Design</RootNamespace>
+    <AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
   </PropertyGroup>
@@ -11,28 +11,29 @@
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-    <Description>This package was generated using the UiPath VS Extension.</Description>
-    <Authors>Company</Authors>
-    <Company>Company</Company>
-    <Copyright>© 2022 Company</Copyright>
-    <PackageTags>UiPath Activit𝗒</PackageTags>
-    <PackageProjectUrl>https://docs.uipath.com/integrations/docs/how-to-create-activities</PackageProjectUrl>
+    <Description>Provides useful extension methods, alternate Task based API and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects</Description>
+    <Authors>UiPath Public Sector Technical Account Managers</Authors>
+    <Company>UiPath</Company>
+    <Copyright>© 2023 UiPath</Copyright>
+    <PackageTags>UiPath TAM Extensions Activities</PackageTags>
+    <PackageProjectUrl>https://github.com/UiPath-TAM-Team/UiPathTAMTeam.Extensions.Activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
-    <!--<PackageIcon>packageIcon.png</PackageIcon>--> <!--PackageIcon not yet supported in UiPath Studio-->
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+	  <Version Condition="'$(version)' == ''">0.0.0</Version>
   </PropertyGroup>
   <!-- Package Versions -->
   <PropertyGroup Condition="'$(Configuration)' == 'Debug' AND '$(DesignTimeBuild)' != 'true'">
-    <PackageVersion>0.1.0.$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
+    <PackageVersion>$(Version).$([System.DateTime]::UtcNow.ToString(MMddHHmmss))</PackageVersion>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
-    <PackageVersion>0.1.0</PackageVersion>
+  <!-- ignore build warnings -->
+  <PropertyGroup>
+    <NoWarn>1701;1702;1572;1573;1591;1998</NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />
+    <None Remove="Designers\DictionaryContainsValueDesigner.xaml" />
+    <None Remove="Designers\GetDictionaryValueDesigner.xaml" />
     <None Remove="Designers\CountDictionaryDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
   </ItemGroup>
@@ -72,7 +73,7 @@
 			<Reference Include="System.Net.Http" />
 			<Reference Include="System.Xml" />
 		</ItemGroup>
-		<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows' ">
+		<ItemGroup Condition=" '$(TargetFramework)' == 'net6.0-windows7.0' ">
 			<PackageReference Include="UiPath.Workflow.Runtime" Version="6.0.0-*" PrivateAssets="All" />
 			<PackageReference Include="UiPath.Workflow" Version="6.0.0-*" PrivateAssets="All" />
 			<PackageReference Include="System.Activities.Core.Presentation" Version="6.0.0-*" PrivateAssets="All" />
@@ -88,6 +89,13 @@
     <Page Include="Designers\AddToDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
+    <Page Include="Designers\DictionaryContainsValueDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Designers\GetDictionaryValueDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>		
     <Page Include="Designers\CountDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>

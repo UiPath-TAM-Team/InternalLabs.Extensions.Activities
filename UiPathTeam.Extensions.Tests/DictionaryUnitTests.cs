@@ -1,5 +1,7 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Activities;
-using System.Collections.Immutable;
+using System.Collections.Generic;
 using UiPathTeam.Extensions.Activities;
 
 namespace UiPathTeam.Extensions.Tests
@@ -76,6 +78,13 @@ namespace UiPathTeam.Extensions.Tests
 			Assert.IsTrue(dictionary.Count == 0);
         }
         [TestMethod]
+        public void TestDictionaryContainsValue()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var boolResult = true;
+            var stringKey = "test key";
+            var stringValue = "test value";
+        [TestMethod]
         public void TestCountDictionary()
         {
             var dictionary = new Dictionary<Object, Object>();
@@ -84,6 +93,44 @@ namespace UiPathTeam.Extensions.Tests
             var Out_Result = new int();
 			
             dictionary.Add(stringKey, stringValue);
+
+
+            dictionary.Add(stringKey, stringValue);
+
+            var dictionaryContainsValue = new DictionaryContainsValue
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Value = new InArgument<Object>((ctx) => stringValue),
+                Result = new OutArgument<Boolean>((ctx) => boolResult),
+            };
+
+            WorkflowInvoker.Invoke(dictionaryContainsValue);
+
+            Assert.IsTrue(boolResult);
+        }
+        [TestMethod]
+        public void TestDictionaryGetValue()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var objectResult = new Object();
+            var stringKey = "test key";
+            var stringValue = "test value";
+            var boolResult = false;
+
+
+            dictionary.Add(stringKey, stringValue);
+
+            var dictionaryGetValue = new GetDictionaryValue
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Key = new InArgument<Object>((ctx) => stringKey),
+                Result = new OutArgument<Object>((ctx) => objectResult),
+            };
+
+            WorkflowInvoker.Invoke(dictionaryGetValue);
+
+            Assert.IsTrue(objectResult.ToString() == stringValue);
+        }
 
             var CountDictionaryActivity = new CountDictionary
             {
