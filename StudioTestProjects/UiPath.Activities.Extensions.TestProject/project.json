@@ -3,9 +3,9 @@
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.System.Activities": "[23.10.0-preview]",
-    "UiPath.Testing.Activities": "[23.10.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.10.0-preview]",
+    "UiPath.System.Activities": "[22.10.8]",
+    "UiPath.Testing.Activities": "[22.10.4]",
+    "UiPath.UIAutomation.Activities": "[22.10.8]",
     "UiPathTeam.Extensions.Activities": "[0.0.0.928225415]"
   },
   "webServices": [],

@@ -9,12 +9,12 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 ## Activities
 
 ### Statements
-
+# In alphabetical order
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
-* `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
-
 * `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
+
+* `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 
 * `Remove from Dictionary`: Removes a Key-Value pair from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
