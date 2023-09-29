@@ -8,7 +8,6 @@
     <IsPackable>false</IsPackable>
     <TestProject>true</TestProject>
     <IsTestProject>true</IsTestProject>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
   <ItemGroup>
