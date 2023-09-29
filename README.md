@@ -18,6 +18,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
+* `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.
+
 ## Contributors
 
 * Michael Kuehn
@@ -29,5 +31,7 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Kristopher Kim
 
 * Gary Refka
+
+* Denny Chiramel
 
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
