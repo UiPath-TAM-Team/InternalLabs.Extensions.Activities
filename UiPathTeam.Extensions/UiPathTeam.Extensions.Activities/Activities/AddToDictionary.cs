@@ -68,10 +68,10 @@ namespace UiPathTeam.Extensions.Activities
             var key = Key.Get(context);
             var value = Value.Get(context);
 
-			      dictionary.Add(key, value);
+            dictionary.Add(key, value);
 
-			// Outputs
-			return (ctx) => {
+            // Outputs
+            return (ctx) => {
             };
         }
 

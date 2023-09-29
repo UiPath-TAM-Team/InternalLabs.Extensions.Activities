@@ -82,7 +82,7 @@ namespace UiPathTeam.Extensions.Activities
             else
             {
                 out_result = false;
-                out_value= null;
+                out_value = null;
             }
 
             // Outputs
