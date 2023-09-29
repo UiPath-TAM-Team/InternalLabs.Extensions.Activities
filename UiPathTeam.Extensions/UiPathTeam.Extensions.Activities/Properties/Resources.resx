@@ -285,14 +285,6 @@
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
-  </data>
-  <data name="Options_Category" xml:space="preserve">
-    <value>Options</value>
-    <comment>category</comment>
-  </data>
   <data name="ValidationScope_Error" xml:space="preserve">
     <value>Cannot be used outside of a {0}.</value>
     <comment>error message; {0} is a container activity (e.g. a scope)</comment>
@@ -349,10 +341,6 @@
     <value>Bool result of existing key</value>
     <comment>property description</comment>
   </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
-  </data>
   <data name="DictionaryContainsKey_Out_value_DisplayName" xml:space="preserve">
     <value>out_value</value>
     <comment>property name</comment>
@@ -360,9 +348,5 @@
   <data name="DictionaryContainsKey_Out_value_Description" xml:space="preserve">
     <value>Dictionary value if exists</value>
     <comment>property description</comment>
-  </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
   </data>
 </root>
