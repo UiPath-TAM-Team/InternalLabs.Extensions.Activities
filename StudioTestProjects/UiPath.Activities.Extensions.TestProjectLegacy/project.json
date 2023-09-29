@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.929223339]"
+    "UiPathTeam.Extensions.Activities": "[0.1.0.913151817]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,7 +20,6 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
-    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -52,8 +51,25 @@
         "editingStatus": "InProgress",
         "testCaseId": "a74af245-1168-4238-8ae9-e238df29e1c2",
         "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
         "fileName": "TestRemoveFromDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8df1ed1a-4947-483d-bfeb-0b9d6d650d0a",
+        "testCaseType": "TestCase",
+        "fileName": "TestCountDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e99c9dbd-03e1-431d-8ea9-a6eaf236c9b9",
+        "testCaseType": "TestCase",
+        "fileName": "TestDictionaryContainsValue.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "547a898f-0173-4e04-9d52-1dcc7b1563e4",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryValue.xaml"
       }
     ],
     "modernBehavior": true

@@ -6,7 +6,6 @@
     <AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
@@ -35,6 +34,8 @@
     <None Remove="Designers\AddToDictionaryDesigner.xaml" />
     <None Remove="Designers\DictionaryContainsKeyDesigner.xaml" />
     <None Remove="Designers\DictionaryContainsValueDesigner.xaml" />
+    <None Remove="Designers\GetDictionaryValueDesigner.xaml" />
+    <None Remove="Designers\CountDictionaryDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
@@ -95,7 +96,13 @@
     <Page Include="Designers\DictionaryContainsValueDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Designers\GetDictionaryValueDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>		
+    <Page Include="Designers\CountDictionaryDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
     <Page Include="Designers\RemoveFromDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>

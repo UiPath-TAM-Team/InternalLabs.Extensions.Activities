@@ -99,16 +99,61 @@ namespace UiPathTeam.Extensions.Tests
 
             Assert.IsTrue(boolResult);
         }
-		[TestMethod]
+
+        [TestMethod]
+        public void TestDictionaryGetValue()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var objectResult = new Object();
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+
+            dictionary.Add(stringKey, stringValue);
+
+            var dictionaryGetValue = new GetDictionaryValue
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Key = new InArgument<Object>((ctx) => stringKey),
+                Result = new OutArgument<Object>((ctx) => objectResult),
+            };
+
+            WorkflowInvoker.Invoke(dictionaryGetValue);
+
+            Assert.IsTrue(objectResult.ToString() == stringValue);
+        }
+
+        [TestMethod]
+        public void TestCountDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var stringKey = "test key";
+            var stringValue = "test value";
+            var Out_Result = new int();
+
+            dictionary.Add(stringKey, stringValue);
+
+            var CountDictionaryActivity = new CountDictionary
+            {
+                In_dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Out_result = new OutArgument<int> ((ctx) => Out_Result),
+            };
+
+            WorkflowInvoker.Invoke(CountDictionaryActivity);
+
+            Assert.IsTrue(Out_Result == 1);
+        }
+
+        [TestMethod]
         public void TestDictionaryContainsKey_KeyExists()
         {
             // Create the dictionary and populate it with key-value pairs
             var dictionary = new Dictionary<object, object>
-    {
-        { "key1", "value1" },
-        { "key2", "value2" },
-        // Add more key-value pairs as needed
-    };
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+                // Add more key-value pairs as needed
+            };
 
             // Set the key you want to test
             var in_key = "key1";
@@ -134,16 +179,17 @@ namespace UiPathTeam.Extensions.Tests
             // Additional assertions based on your activity's behavior
             Assert.AreEqual("value1", outputValue); // Verify the expected value
         }
+
         [TestMethod]
         public void TestDictionaryContainsKey_KeyDoesNotExists()
         {
             // Create the dictionary and populate it with key-value pairs
             var dictionary = new Dictionary<object, object>
-    {
-        { "key1", "value1" },
-        { "key2", "value2" },
-        // Add more key-value pairs as needed
-    };
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+                // Add more key-value pairs as needed
+            };
 
             // Set the key you want to test
             var in_key = "failure";
