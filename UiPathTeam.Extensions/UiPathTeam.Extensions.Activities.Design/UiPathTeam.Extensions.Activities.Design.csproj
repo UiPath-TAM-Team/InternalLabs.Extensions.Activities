@@ -6,7 +6,6 @@
     <AssemblyName>UiPathTeam.Extensions.Activities.Design</AssemblyName>
     <PackageId>UiPathTeam.Extensions.Activities</PackageId>
     <EnableDefaultPageItems>false</EnableDefaultPageItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <!-- Package Metadata -->
   <PropertyGroup>
