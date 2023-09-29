@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.928231019]"
+    "UiPathTeam.Extensions.Activities": "[0.1.0.913151817]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -54,6 +54,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestRemoveFromDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2b3d175b-c0ed-44a7-812c-640b95dc34e4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCountDictionary.xaml"
       }
     ],
     "modernBehavior": true

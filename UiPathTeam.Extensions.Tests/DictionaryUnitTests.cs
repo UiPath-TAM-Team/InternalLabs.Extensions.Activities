@@ -84,10 +84,10 @@ namespace UiPathTeam.Extensions.Tests
             var boolResult = true;
             var stringKey = "test key";
             var stringValue = "test value";
+            
 
-			
             dictionary.Add(stringKey, stringValue);
-           
+
             var dictionaryContainsValue = new DictionaryContainsValue
             {
                 Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
@@ -106,7 +106,6 @@ namespace UiPathTeam.Extensions.Tests
             var objectResult = new Object();
             var stringKey = "test key";
             var stringValue = "test value";
-            var boolResult = false;
 
 
             dictionary.Add(stringKey, stringValue);
