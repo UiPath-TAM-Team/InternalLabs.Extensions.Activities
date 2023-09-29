@@ -329,4 +329,44 @@
     <value>Output from the Dictionary for the provided key</value>
     <comment>property description</comment>
   </data>
+  <data name="DictionaryContainsKey_DisplayName" xml:space="preserve">
+    <value>Dictionary Contains Key</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Description" xml:space="preserve">
+    <value>determine if a specific Key exists within a given Dictionary. The activity will provide a Boolean results as to whether a provided Key exists within a provided Dictionary. When the given key exists, then value will be returned. When the given key is does not exists, a null is returned for the value.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_dictionary_DisplayName" xml:space="preserve">
+    <value>in_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_dictionary_Description" xml:space="preserve">
+    <value>Dictionary to be evaluated</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_key_DisplayName" xml:space="preserve">
+    <value>in_key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_key_Description" xml:space="preserve">
+    <value>Key to be evaulated</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_result_DisplayName" xml:space="preserve">
+    <value>out_result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_result_Description" xml:space="preserve">
+    <value>Bool result of existing key</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_value_DisplayName" xml:space="preserve">
+    <value>out_value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_value_Description" xml:space="preserve">
+    <value>Dictionary value if exists</value>
+    <comment>property description</comment>
+  </data>
 </root>

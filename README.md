@@ -9,10 +9,12 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 ## Activities
 
 ### Statements
-
+# In alphabetical order
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
 * `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
+
+* `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 
@@ -24,16 +26,18 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Contributors
 
-* Michael Kuehn
-
 * Cathleen Runde
-
-* Robert Searing
-
-* Kristopher Kim
-
-* Gary Refka
 
 * Denny Chiramel
 
+* Gary Refka
+
+* Kristopher Kim
+
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
+
+* Michael Kuehn
+
+* Michael Tomlin
+
+* Robert Searing
