@@ -68,8 +68,8 @@ namespace UiPathTeam.Extensions.Activities
             // Inputs
             var in_dictionary = In_dictionary.Get(context);
             var in_key = In_key.Get(context);
-            var out_result = Out_result.Get(context);
-            var out_value = Out_value.Get(context);
+            bool out_result;
+            object out_value;
 
             ///////////////////////////
             // Add execution logic HERE
@@ -82,6 +82,7 @@ namespace UiPathTeam.Extensions.Activities
             else
             {
                 out_result = false;
+                out_value= null;
             }
 
             // Outputs
