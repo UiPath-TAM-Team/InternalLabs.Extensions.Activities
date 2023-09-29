@@ -12,6 +12,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
+* `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
+
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 
 * `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.

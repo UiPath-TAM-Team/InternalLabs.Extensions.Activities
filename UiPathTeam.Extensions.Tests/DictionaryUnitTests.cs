@@ -84,7 +84,7 @@ namespace UiPathTeam.Extensions.Tests
             var boolResult = true;
             var stringKey = "test key";
             var stringValue = "test value";
-
+            
 
             dictionary.Add(stringKey, stringValue);
 
@@ -106,7 +106,6 @@ namespace UiPathTeam.Extensions.Tests
             var objectResult = new Object();
             var stringKey = "test key";
             var stringValue = "test value";
-            var boolResult = false;
 
 
             dictionary.Add(stringKey, stringValue);
@@ -123,5 +122,25 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsTrue(objectResult.ToString() == stringValue);
         }
 
+        [TestMethod]
+        public void TestCountDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var stringKey = "test key";
+            var stringValue = "test value";
+            var Out_Result = new int();
+
+            dictionary.Add(stringKey, stringValue);
+
+            var CountDictionaryActivity = new CountDictionary
+            {
+                In_dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Out_result = new OutArgument<int> ((ctx) => Out_Result),
+            };
+
+            WorkflowInvoker.Invoke(CountDictionaryActivity);
+
+            Assert.IsTrue(Out_Result == 1);
+        }
     }
 }

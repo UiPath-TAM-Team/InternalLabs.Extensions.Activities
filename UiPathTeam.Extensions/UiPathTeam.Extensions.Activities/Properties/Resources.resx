@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -209,6 +209,38 @@
     <value>The value associated with the key</value>
     <comment>property description</comment>
   </data>
+  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
+    <value>RemoveFromDictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Description" xml:space="preserve">
+    <value />
+    <comment>activity description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
+    <value>in_Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
+    <value />
+    <comment>property description</comment>
+  </data>
   <data name="DictionaryContainsValue_DisplayName" xml:space="preserve">
     <value>Dictionary Contains Value</value>
     <comment>activity name</comment>
@@ -241,36 +273,28 @@
     <value />
     <comment>property description</comment>
   </data>
-  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
-    <value>RemoveFromDictionary</value>
+  <data name="CountDictionary_DisplayName" xml:space="preserve">
+    <value>Count Dictionary</value>
     <comment>activity name</comment>
   </data>
-  <data name="RemoveFromDictionary_Description" xml:space="preserve">
-    <value />
+  <data name="CountDictionary_Description" xml:space="preserve">
+    <value>Counts the number of Value/key pairs in dictionary and returns count</value>
     <comment>activity description</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
-    <value>in_Dictionary</value>
+  <data name="CountDictionary_In_dictionary_DisplayName" xml:space="preserve">
+    <value>in_dictionary</value>
     <comment>property name</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
-    <value />
+  <data name="CountDictionary_In_dictionary_Description" xml:space="preserve">
+    <value>Dictionary to be counted</value>
     <comment>property description</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
-    <value>in_Key</value>
+  <data name="CountDictionary_Out_result_DisplayName" xml:space="preserve">
+    <value>out_result</value>
     <comment>property name</comment>
   </data>
-  <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
-    <value />
-    <comment>property description</comment>
-  </data>
-  <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
-    <value>out_Result</value>
-    <comment>property name</comment>
-  </data>
-  <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
-    <value />
+  <data name="CountDictionary_Out_result_Description" xml:space="preserve">
+    <value>Int of count of key pairs</value>
     <comment>property description</comment>
   </data>
   <data name="GetDictionaryValue_DisplayName" xml:space="preserve">
