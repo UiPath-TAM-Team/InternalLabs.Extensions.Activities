@@ -67,9 +67,7 @@ namespace UiPathTeam.Extensions.Activities
             var key = Key.Get(context);
             var boolresult = false;
 
-            var result = Result.Get(context);
-
-            boolresult = dictionary.TryGetValue(key, out result);
+            boolresult = dictionary.TryGetValue(key, out object result);
 
             if (!boolresult)
             {
