@@ -81,7 +81,7 @@ namespace UiPathTeam.Extensions.Tests
         public void TestDictionaryContainsValue()
         {
             var dictionary = new Dictionary<Object, Object>();
-            var boolResult = false;
+            var boolResult = true;
             var stringKey = "test key";
             var stringValue = "test value";
 
