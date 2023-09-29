@@ -10,9 +10,9 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ### Statements
 
-`Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
-
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
+
+* `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 

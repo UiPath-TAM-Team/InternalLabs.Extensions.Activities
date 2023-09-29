@@ -84,19 +84,10 @@ namespace UiPathTeam.Extensions.Tests
             var boolResult = true;
             var stringKey = "test key";
             var stringValue = "test value";
-        [TestMethod]
-        public void TestCountDictionary()
-        {
-            var dictionary = new Dictionary<Object, Object>();
-            var stringKey = "test key";
-            var stringValue = "test value";
-            var Out_Result = new int();
+
 			
             dictionary.Add(stringKey, stringValue);
-
-
-            dictionary.Add(stringKey, stringValue);
-
+           
             var dictionaryContainsValue = new DictionaryContainsValue
             {
                 Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
@@ -131,6 +122,16 @@ namespace UiPathTeam.Extensions.Tests
 
             Assert.IsTrue(objectResult.ToString() == stringValue);
         }
+
+        [TestMethod]
+        public void TestCountDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var stringKey = "test key";
+            var stringValue = "test value";
+            var Out_Result = new int();
+
+            dictionary.Add(stringKey, stringValue);
 
             var CountDictionaryActivity = new CountDictionary
             {
