@@ -63,7 +63,7 @@ jobs:
     - name: Build Solution
       run: msbuild.exe $env:Solution_Name /verbosity:minimal /p:GeneratePackageOnBuild=false /p:Configuration=Release
       env:
-        version: ${{ steps.version.outputs.version_tag }}
+        version: ${{ steps.version.outputs.version }}
 
     - name: Create the nuget package
       run: dotnet pack -c Release /p:Version=${{ steps.version.outputs.version }} --output "_build"
