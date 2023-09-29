@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.8]",
     "UiPath.Testing.Activities": "[22.10.4]",
     "UiPath.UIAutomation.Activities": "[22.10.8]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.928225415]"
+    "UiPathTeam.Extensions.Activities": "[0.0.0.929223339]"
   },
   "webServices": [],
   "entitiesStores": [],

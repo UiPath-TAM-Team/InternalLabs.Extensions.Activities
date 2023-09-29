@@ -111,7 +111,7 @@ namespace UiPathTeam.Extensions.Tests
     };
 
             // Set the key you want to test
-            var in_key = "Key1";
+            var in_key = "key1";
 
             // Positive Test: Key is in dictionary, return true and value
             // Create an instance of your workflow activity
@@ -129,10 +129,10 @@ namespace UiPathTeam.Extensions.Tests
             var outputValue = (object)output["Out_value"]; // Assuming "Out_value" is the output argument
 
             // Assert the result based on your activity's logic
-            Assert.IsFalse(outputResult); // Verify that the result is true when the key exists
+            Assert.IsTrue(outputResult); // Verify that the result is true when the key exists
 
             // Additional assertions based on your activity's behavior
-            Assert.AreNotEqual("value1", outputValue); // Verify the expected value
+            Assert.AreEqual("value1", outputValue); // Verify the expected value
         }
         [TestMethod]
         public void TestDictionaryContainsKey_KeyDoesNotExists()
@@ -146,7 +146,7 @@ namespace UiPathTeam.Extensions.Tests
     };
 
             // Set the key you want to test
-            var in_key = "Failure";
+            var in_key = "failure";
 
             // Positive Test: Key is in dictionary, return true and value
             // Create an instance of your workflow activity
