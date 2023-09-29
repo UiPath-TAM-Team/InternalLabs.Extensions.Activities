@@ -273,4 +273,36 @@
     <value />
     <comment>property description</comment>
   </data>
+  <data name="GetDictionaryValue_DisplayName" xml:space="preserve">
+    <value>Get Dictionary Value</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryValue_Description" xml:space="preserve">
+    <value>The activity will return a value from a given dictionary with the provided Key</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryValue_Dictionary_DisplayName" xml:space="preserve">
+    <value>Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Dictionary_Description" xml:space="preserve">
+    <value>Enter the Dictionary to get the value</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValue_Key_DisplayName" xml:space="preserve">
+    <value>Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Key_Description" xml:space="preserve">
+    <value>Enter the key to get value from the Dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValue_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Result_Description" xml:space="preserve">
+    <value>Output from the Dictionary for the provided key</value>
+    <comment>property description</comment>
+  </data>
 </root>
