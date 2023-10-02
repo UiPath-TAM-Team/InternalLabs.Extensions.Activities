@@ -178,7 +178,7 @@
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
   <data name="AddToDictionary_DisplayName" xml:space="preserve">
-    <value>AddToDictionary</value>
+    <value>Add To Dictionary</value>
     <comment>activity name</comment>
   </data>
   <data name="AddToDictionary_Description" xml:space="preserve">
@@ -209,7 +209,7 @@
     <value>The value associated with the key</value>
     <comment>property description</comment>
   </data>
-  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
+  <data name="Remove From Dictionary_DisplayName" xml:space="preserve">
     <value>RemoveFromDictionary</value>
     <comment>activity name</comment>
   </data>
