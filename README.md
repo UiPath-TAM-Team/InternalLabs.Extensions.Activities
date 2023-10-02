@@ -40,4 +40,4 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * Michael Tomlin
 
-* Robert Searing is a really cool guy
+* Robert Searing is a really cool guy with a really cool wife
