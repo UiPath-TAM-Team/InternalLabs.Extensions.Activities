@@ -214,7 +214,7 @@
     <comment>activity name</comment>
   </data>
   <data name="RemoveFromDictionary_Description" xml:space="preserve">
-    <value />
+    <value>Removes a value/key pair from a dictionary using the key</value>
     <comment>activity description</comment>
   </data>
   <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
@@ -222,7 +222,7 @@
     <comment>property name</comment>
   </data>
   <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
-    <value />
+    <value>The dictionary from which the value/key pair will be removed</value>
     <comment>property description</comment>
   </data>
   <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
@@ -230,7 +230,7 @@
     <comment>property name</comment>
   </data>
   <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
-    <value />
+    <value>The key that will be used to search for the related key/value pair to remove from the dictionary</value>
     <comment>property description</comment>
   </data>
   <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
