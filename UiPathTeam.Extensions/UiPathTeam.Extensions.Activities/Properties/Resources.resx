@@ -209,8 +209,8 @@
     <value>The value associated with the key</value>
     <comment>property description</comment>
   </data>
-  <data name="Remove From Dictionary_DisplayName" xml:space="preserve">
-    <value>RemoveFromDictionary</value>
+  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
+    <value>Remove From Dictionary</value>
     <comment>activity name</comment>
   </data>
   <data name="RemoveFromDictionary_Description" xml:space="preserve">
