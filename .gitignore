@@ -363,3 +363,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/UiPathTeam.Extensions/UiPathTeam.Extensions.Activities.Design/Themes/Icons.xaml
