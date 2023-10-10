@@ -214,6 +214,26 @@ namespace UiPathTeam.Extensions.Tests
             // Additional assertions based on your activity's behavior
             Assert.AreNotEqual("value1", outputValue); // Verify the expected value
         }
-    
+
+        [TestMethod]
+        public void TestClearDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+            dictionary.Add(stringKey, stringValue);
+
+            var clearDictionaryActivity = new ClearDictionary
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+            };
+
+            WorkflowInvoker.Invoke(clearDictionaryActivity);
+
+            Assert.IsTrue(dictionary.Count == 0);
+        }
+
     }
 }

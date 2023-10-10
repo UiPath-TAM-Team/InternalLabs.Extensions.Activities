@@ -46,6 +46,10 @@ namespace UiPathTeam.Extensions.Activities.Design
             builder.AddCustomAttributes(typeof(CountDictionary), new DesignerAttribute(typeof(CountDictionaryDesigner)));
             builder.AddCustomAttributes(typeof(CountDictionary), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(ClearDictionary), categoryAttribute);
+            builder.AddCustomAttributes(typeof(ClearDictionary), new DesignerAttribute(typeof(ClearDictionaryDesigner)));
+            builder.AddCustomAttributes(typeof(ClearDictionary), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
