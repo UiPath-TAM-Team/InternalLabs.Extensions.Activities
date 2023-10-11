@@ -14,6 +14,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
 
+* 'Clear Dictionary': Removes all Key-Value pairs from the Dictionary<Object, Object>.
+
 * `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
@@ -41,3 +43,5 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Michael Tomlin
 
 * Robert Searing
+
+* [Sebastian Ramirez](https://www.linkedin.com/in/jsramirez/)
