@@ -73,6 +73,7 @@
         "fileName": "TestGetDictionaryValue.xaml"
       },
       {
+        "editingStatus": "InProgress",
         "testCaseId": "98bde68d-c1b5-4c2d-8dc7-871db2e38fd3",
         "testCaseType": "TestCase",
         "fileName": "TestClearDictionary.xaml"
