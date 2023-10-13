@@ -22,6 +22,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
+* `Build Dictionary` : Builds a dictionary given a value and key arrays. And returns a built dictionary of the provided values and keys. 
+
 ## Contributors
 
 * Michael Kuehn
@@ -37,3 +39,5 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Denny Chiramel
 
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
+
+* Duncan Steele

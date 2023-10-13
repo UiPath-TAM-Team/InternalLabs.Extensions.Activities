@@ -5,8 +5,8 @@
   "dependencies": {
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
-    "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.1.0.913151817]"
+    "UiPath.UIAutomation.Activities": "[23.4.9]",
+    "UiPathTeam.Extensions.Activities": "[0.0.0.1012153734]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,6 +20,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -70,6 +71,13 @@
         "testCaseId": "547a898f-0173-4e04-9d52-1dcc7b1563e4",
         "testCaseType": "TestCase",
         "fileName": "TestGetDictionaryValue.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "2a30a85d-4b61-48ac-9002-5078a3c05274",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestBuildDictionary.xaml"
       }
     ],
     "modernBehavior": true

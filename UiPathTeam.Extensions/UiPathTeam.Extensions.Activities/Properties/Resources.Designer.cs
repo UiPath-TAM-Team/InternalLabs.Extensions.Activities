@@ -142,6 +142,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string BuildDictionary_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Build Dictionary.
+        /// </summary>
+        public static string BuildDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string BuildDictionary_In_keys_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_keys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_keys.
+        /// </summary>
+        public static string BuildDictionary_In_keys_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_keys_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string BuildDictionary_In_values_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_values_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_values.
+        /// </summary>
+        public static string BuildDictionary_In_values_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_values_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string BuildDictionary_Out_dictionary_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Out_dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_dictionary.
+        /// </summary>
+        public static string BuildDictionary_Out_dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Out_dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Common.
         /// </summary>
         public static string Common_Category {

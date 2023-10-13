@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.1.0.913151817]"
+    "UiPathTeam.Extensions.Activities": "[0.0.0.1012153734]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -20,6 +20,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
