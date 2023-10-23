@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -367,6 +367,22 @@
   </data>
   <data name="DictionaryContainsKey_Out_value_Description" xml:space="preserve">
     <value>Dictionary value if exists</value>
+    <comment>property description</comment>
+  </data>
+  <data name="ClearDictionary_DisplayName" xml:space="preserve">
+    <value>Clear Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="ClearDictionary_Description" xml:space="preserve">
+    <value>Removes all keys and values from the Dictionary&lt;TKey,TValue&gt;.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="ClearDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>In_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="ClearDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value>Dictionary&lt;TKey,TValue&gt; object to be cleared of all keys and values.</value>
     <comment>property description</comment>
   </data>
 </root>
