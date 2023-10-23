@@ -369,10 +369,6 @@
     <value>Dictionary value if exists</value>
     <comment>property description</comment>
   </data>
-  <data name="Authentication_Category" xml:space="preserve">
-    <value>Authentication</value>
-    <comment>category</comment>
-  </data>
   <data name="Common_Category" xml:space="preserve">
     <value>Common</value>
     <comment>category</comment>
