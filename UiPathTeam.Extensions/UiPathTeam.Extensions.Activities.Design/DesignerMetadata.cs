@@ -50,6 +50,10 @@ namespace UiPathTeam.Extensions.Activities.Design
             builder.AddCustomAttributes(typeof(ClearDictionary), new DesignerAttribute(typeof(ClearDictionaryDesigner)));
             builder.AddCustomAttributes(typeof(ClearDictionary), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(DictionaryToString), categoryAttribute);
+            builder.AddCustomAttributes(typeof(DictionaryToString), new DesignerAttribute(typeof(DictionaryToStringDesigner)));
+            builder.AddCustomAttributes(typeof(DictionaryToString), new HelpKeywordAttribute(""));
+
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }
