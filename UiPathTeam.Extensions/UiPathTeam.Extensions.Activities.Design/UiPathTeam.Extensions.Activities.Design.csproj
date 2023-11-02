@@ -35,6 +35,7 @@
     <None Remove="Designers\ClearDictionaryDesigner.xaml" />
     <None Remove="Designers\DictionaryContainsKeyDesigner.xaml" />
     <None Remove="Designers\DictionaryContainsValueDesigner.xaml" />
+    <None Remove="Designers\DictionaryToStringDesigner.xaml" />
     <None Remove="Designers\GetDictionaryValueDesigner.xaml" />
     <None Remove="Designers\CountDictionaryDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
@@ -100,6 +101,9 @@
     <Page Include="Designers\DictionaryContainsValueDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Page>
+    <Page Include="Designers\DictionaryToStringDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </Page>
     <Page Include="Designers\GetDictionaryValueDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>

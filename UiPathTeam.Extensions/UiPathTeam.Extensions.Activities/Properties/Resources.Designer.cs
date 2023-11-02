@@ -421,6 +421,60 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Convert dictionary to string value.
+        /// </summary>
+        public static string DictionaryToString_Description {
+            get {
+                return ResourceManager.GetString("DictionaryToString_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary To String.
+        /// </summary>
+        public static string DictionaryToString_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryToString_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The dictionary to convert.
+        /// </summary>
+        public static string DictionaryToString_In_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("DictionaryToString_In_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In_Dictionary.
+        /// </summary>
+        public static string DictionaryToString_In_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryToString_In_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to String representation of the dictionary.
+        /// </summary>
+        public static string DictionaryToString_Result_Description {
+            get {
+                return ResourceManager.GetString("DictionaryToString_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string DictionaryToString_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("DictionaryToString_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Do.
         /// </summary>
         public static string Do {

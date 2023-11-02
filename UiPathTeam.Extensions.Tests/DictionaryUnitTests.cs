@@ -237,5 +237,33 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsTrue(dictionary.Count == 0);
         }
 
+        [TestMethod]
+        public void TestDictionaryToString()
+        {
+            //Create a dictionary with some test key, value pairs
+            var dictionary = new Dictionary<object, object>
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+            };
+            string expectedvalue = "[key1, value1], [key2, value2]";
+            string outputvalue = String.Empty;
+
+            //create the DictionaryToSting function
+            var DictionaryToStringActivity = new DictionaryToString
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>(ctx => dictionary),
+            };
+
+            //Invoke the workflow
+            var output = WorkflowInvoker.Invoke(DictionaryToStringActivity);
+
+            outputvalue = (string)output["Result"]; // "Result" is the output argument as described in the wizard
+
+            // Matches expected value
+            Assert.AreEqual(outputvalue, expectedvalue); // Verify the expected value
+        }
+
     }
+
 }

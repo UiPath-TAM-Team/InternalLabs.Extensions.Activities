@@ -6,7 +6,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.1010215058]"
+    "UiPathTeam.Extensions.Activities": "[0.0.0.1031142747]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -77,6 +77,13 @@
         "testCaseId": "98bde68d-c1b5-4c2d-8dc7-871db2e38fd3",
         "testCaseType": "TestCase",
         "fileName": "TestClearDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5372fccf-9ef2-4198-b90d-a993ecde5abd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestDictionaryToString.xaml"
       }
     ],
     "modernBehavior": true
