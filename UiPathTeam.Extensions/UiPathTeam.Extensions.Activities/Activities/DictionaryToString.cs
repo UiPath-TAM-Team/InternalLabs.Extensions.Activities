@@ -58,9 +58,8 @@ namespace UiPathTeam.Extensions.Activities
         {
             // Inputs
             var in_dictionary = In_Dictionary.Get(context);
-            //String StrOut = String.Empty;
-            string StrOut = Result.Get(context);
 
+            String StrOut = String.Empty;
             String delim = String.Empty;
 
             ///////////////////////////

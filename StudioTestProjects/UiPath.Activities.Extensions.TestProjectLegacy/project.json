@@ -85,13 +85,6 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestDictionaryToString.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "e6f3aa49-13d8-472f-8b95-5d21200d0d55",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "TestCaseDictionaryToString.xaml"
       }
     ],
     "modernBehavior": true

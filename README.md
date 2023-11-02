@@ -20,7 +20,7 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
 
-* `Dictionary To String`: Converts a dictionary to a string. Note that this only converts simple objects. Additional deconstruction is required for complex data types (if your dictionary has dictionaries for elements, they will not be printed).
+* `Dictionary To String`: Converts a dictionary to a string. Note that this only converts simple objects. Complex objects require walking through potential nested complex objects (if your dictionary has dictionaries for elements, they will not be printed).
 
 * `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.
 
