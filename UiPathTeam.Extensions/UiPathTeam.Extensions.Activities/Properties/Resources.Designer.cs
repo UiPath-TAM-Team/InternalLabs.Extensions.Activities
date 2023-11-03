@@ -142,6 +142,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Activity that takes in an array of keys and values and outputs a dictionary..
+        /// </summary>
+        public static string BuildDictionary_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Build Dictionary.
+        /// </summary>
+        public static string BuildDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input for the array of keys. .
+        /// </summary>
+        public static string BuildDictionary_In_keys_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_keys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_keys.
+        /// </summary>
+        public static string BuildDictionary_In_keys_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_keys_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Input for the array of values..
+        /// </summary>
+        public static string BuildDictionary_In_values_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_values_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_values.
+        /// </summary>
+        public static string BuildDictionary_In_values_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_In_values_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Out of created dictionary. .
+        /// </summary>
+        public static string BuildDictionary_Out_dictionary_Description {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Out_dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_dictionary.
+        /// </summary>
+        public static string BuildDictionary_Out_dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("BuildDictionary_Out_dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Removes all keys and values from the Dictionary&lt;TKey,TValue&gt;..
         /// </summary>
         public static string ClearDictionary_Description {
