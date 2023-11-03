@@ -12,6 +12,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 # In alphabetical order
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
+* `Build Dictionary` : Builds a dictionary given a value and key arrays. And returns a built dictionary of the provided values and keys. 
+
 * `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
 
 * 'Clear Dictionary': Removes all Key-Value pairs from the Dictionary<Object, Object>.
@@ -35,6 +37,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Cathleen Runde
 
 * Denny Chiramel
+
+* Duncan Steele
 
 * Gary Refka
 

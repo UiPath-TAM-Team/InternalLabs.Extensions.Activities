@@ -385,6 +385,30 @@
     <value>Dictionary&lt;TKey,TValue&gt; object to be cleared of all keys and values.</value>
     <comment>property description</comment>
   </data>
+  <data name="DictionaryToString_DisplayName" xml:space="preserve">
+    <value>Dictionary To String</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DictionaryToString_Description" xml:space="preserve">
+    <value>Convert dictionary to string value</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DictionaryToString_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>In_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryToString_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary to convert</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryToString_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryToString_Result_Description" xml:space="preserve">
+    <value>String representation of the dictionary</value>
+    <comment>property description</comment>
+  </data>
   <data name="Authentication_Category" xml:space="preserve">
     <value>Authentication</value>
     <comment>category</comment>
@@ -421,32 +445,44 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="DictionaryToString_DisplayName" xml:space="preserve">
-    <value>Dictionary To String</value>
+  <data name="BuildDictionary_DisplayName" xml:space="preserve">
+    <value>Build Dictionary</value>
     <comment>activity name</comment>
   </data>
-  <data name="DictionaryToString_Description" xml:space="preserve">
-    <value>Convert dictionary to string value</value>
+  <data name="BuildDictionary_Description" xml:space="preserve">
+    <value>Activity that takes in an array of keys and values and outputs a dictionary.</value>
     <comment>activity description</comment>
   </data>
-  <data name="DictionaryToString_In_Dictionary_DisplayName" xml:space="preserve">
-    <value>In_Dictionary</value>
+  <data name="BuildDictionary_In_keys_DisplayName" xml:space="preserve">
+    <value>in_keys</value>
     <comment>property name</comment>
   </data>
-  <data name="DictionaryToString_In_Dictionary_Description" xml:space="preserve">
-    <value>The dictionary to convert</value>
+  <data name="BuildDictionary_In_keys_Description" xml:space="preserve">
+    <value>Input for the array of keys. </value>
     <comment>property description</comment>
   </data>
   <data name="Input_Category" xml:space="preserve">
     <value>Input</value>
     <comment>category</comment>
   </data>
-  <data name="DictionaryToString_Result_DisplayName" xml:space="preserve">
-    <value>Result</value>
+  <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
+    <value>in_values</value>
     <comment>property name</comment>
   </data>
-  <data name="DictionaryToString_Result_Description" xml:space="preserve">
-    <value>String representation of the dictionary</value>
+  <data name="BuildDictionary_In_values_Description" xml:space="preserve">
+    <value>Input for the array of values.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
+    <value>out_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_Description" xml:space="preserve">
+    <value>Out of created dictionary. </value>
     <comment>property description</comment>
   </data>
   <data name="Output_Category" xml:space="preserve">
