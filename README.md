@@ -26,6 +26,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.
 
+* `Get Dictionary Values` : Gets all the values in existing Dictionary<Object, Object> and returns a List<Object> value as the result.
+
 * `Remove from Dictionary`: Removes a Key-Value pair from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
@@ -53,3 +55,5 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Robert Searing
 
 * [Sebastian Ramirez](https://www.linkedin.com/in/jsramirez/)
+
+* Ashwin Gaddam
