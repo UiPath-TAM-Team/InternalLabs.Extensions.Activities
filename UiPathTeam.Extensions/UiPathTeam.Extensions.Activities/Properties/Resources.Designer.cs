@@ -628,6 +628,78 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Continue On Error.
+        /// </summary>
+        public static string GetDictionaryValues_ContinueOnError_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_ContinueOnError_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ContinueOnError.
+        /// </summary>
+        public static string GetDictionaryValues_ContinueOnError_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_ContinueOnError_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get all values in the dictionary as list of objects.
+        /// </summary>
+        public static string GetDictionaryValues_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string GetDictionaryValues_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dictionary.
+        /// </summary>
+        public static string GetDictionaryValues_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetDictionaryValues.
+        /// </summary>
+        public static string GetDictionaryValues_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of values in the dictionary.
+        /// </summary>
+        public static string GetDictionaryValues_Result_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string GetDictionaryValues_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Input.
         /// </summary>
         public static string Input_Category {
