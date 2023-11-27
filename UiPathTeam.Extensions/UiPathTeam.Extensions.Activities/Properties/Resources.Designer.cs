@@ -628,25 +628,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Continue On Error.
-        /// </summary>
-        public static string GetDictionaryValues_ContinueOnError_Description {
-            get {
-                return ResourceManager.GetString("GetDictionaryValues_ContinueOnError_Description", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ContinueOnError.
-        /// </summary>
-        public static string GetDictionaryValues_ContinueOnError_DisplayName {
-            get {
-                return ResourceManager.GetString("GetDictionaryValues_ContinueOnError_DisplayName", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Get all values in the dictionary as list of objects.
+        ///   Looks up a localized string similar to The activity will return all the values from a given dictionary.
         /// </summary>
         public static string GetDictionaryValues_Description {
             get {
@@ -655,7 +637,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dictionary.
+        ///   Looks up a localized string similar to Get all values in the dictionary as list of objects.
         /// </summary>
         public static string GetDictionaryValues_Dictionary_Description {
             get {

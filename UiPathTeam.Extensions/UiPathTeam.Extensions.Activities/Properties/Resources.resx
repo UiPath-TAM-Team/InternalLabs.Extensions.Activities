@@ -441,48 +441,12 @@
     <value>Out of created dictionary. </value>
     <comment>property description</comment>
   </data>
-  <data name="Authentication_Category" xml:space="preserve">
-    <value>Authentication</value>
-    <comment>category</comment>
-  </data>
-  <data name="Common_Category" xml:space="preserve">
-    <value>Common</value>
-    <comment>category</comment>
-  </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
-  </data>
-  <data name="Options_Category" xml:space="preserve">
-    <value>Options</value>
-    <comment>category</comment>
-  </data>
-  <data name="ValidationScope_Error" xml:space="preserve">
-    <value>Cannot be used outside of a {0}.</value>
-    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
-  </data>
-  <data name="ValidationValue_Error" xml:space="preserve">
-    <value>Please provide a value for {0}.</value>
-    <comment>error message; {0} is the name of a missing property</comment>
-  </data>
-  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
-    <value>Please provide a value either for {0} or {1}, but not both.</value>
-    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
-  </data>
-  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
-    <value>Please provide values for both {0} and {1}.</value>
-    <comment>error message; {0} &amp; {1} are complementary properties</comment>
-  </data>
   <data name="GetDictionaryValues_DisplayName" xml:space="preserve">
     <value>GetDictionaryValues</value>
     <comment>activity name</comment>
   </data>
   <data name="GetDictionaryValues_Description" xml:space="preserve">
-    <value>Get all values in the dictionary as list of objects</value>
+    <value>The activity will return all the values from a given dictionary</value>
     <comment>activity description</comment>
   </data>
   <data name="GetDictionaryValues_Dictionary_DisplayName" xml:space="preserve">
@@ -490,24 +454,8 @@
     <comment>property name</comment>
   </data>
   <data name="GetDictionaryValues_Dictionary_Description" xml:space="preserve">
-    <value>Dictionary</value>
+    <value>Get all values in the dictionary as list of objects</value>
     <comment>property description</comment>
-  </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
-  <data name="GetDictionaryValues_ContinueOnError_DisplayName" xml:space="preserve">
-    <value>ContinueOnError</value>
-    <comment>property name</comment>
-  </data>
-  <data name="GetDictionaryValues_ContinueOnError_Description" xml:space="preserve">
-    <value>Continue On Error</value>
-    <comment>property description</comment>
-  </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
   </data>
   <data name="GetDictionaryValues_Result_DisplayName" xml:space="preserve">
     <value>Result</value>
@@ -516,9 +464,5 @@
   <data name="GetDictionaryValues_Result_Description" xml:space="preserve">
     <value>List of values in the dictionary</value>
     <comment>property description</comment>
-  </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
   </data>
 </root>
