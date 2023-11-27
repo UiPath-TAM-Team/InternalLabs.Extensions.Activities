@@ -34,6 +34,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Contributors
 
+* Ashwin Gaddam
+
 * [Bryan Senter](https://www.linkedin.com/in/bryansenter/)
 
 * Cathleen Runde
@@ -55,5 +57,3 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Robert Searing
 
 * [Sebastian Ramirez](https://www.linkedin.com/in/jsramirez/)
-
-* Ashwin Gaddam
