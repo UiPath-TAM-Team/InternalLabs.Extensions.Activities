@@ -214,6 +214,81 @@ namespace UiPathTeam.Extensions.Tests
             // Additional assertions based on your activity's behavior
             Assert.AreNotEqual("value1", outputValue); // Verify the expected value
         }
-    
+        [TestMethod]
+        public void TestClearDictionary()
+        {
+            //Create a dictionary with some test key, value pairs
+            var dictionary = new Dictionary<object, object>
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+            };
+
+            //create the Clear Dictionary function
+            var clearDictionaryActivity = new ClearDictionary
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+            };
+
+            //Invoke the workflow
+            WorkflowInvoker.Invoke(clearDictionaryActivity);
+
+            //Assert the count of the Dictionary is 0
+            Assert.IsTrue(dictionary.Count == 0);
+        }
+
+        [TestMethod]
+        public void TestDictionaryToString()
+        {
+            //Create a dictionary with some test key, value pairs
+            var dictionary = new Dictionary<object, object>
+            {
+                { "key1", "value1" },
+                { "key2", "value2" },
+            };
+            string expectedvalue = "[key1, value1], [key2, value2]";
+            string outputvalue = String.Empty;
+
+            //create the DictionaryToSting function
+            var DictionaryToStringActivity = new DictionaryToString
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>(ctx => dictionary),
+            };
+
+            //Invoke the workflow
+            var output = WorkflowInvoker.Invoke(DictionaryToStringActivity);
+
+            outputvalue = (string)output["Result"]; // "Result" is the output argument as described in the wizard
+
+            // Matches expected value
+            Assert.AreEqual(outputvalue, expectedvalue); // Verify the expected value
+        }
+
+        [TestMethod]
+        public void TestBuildDictionary()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+
+            var stringKeys = new string[] { "test key1", "test key2" };
+            var stringValues = new string[] { "test value1", "test value2" };
+
+
+            dictionary.Add(stringKeys, stringValues);
+
+            var buildDictionaryActivity = new BuildDictionary
+            {
+
+                In_keys = new InArgument<Object[]>((ctx) => stringKeys),
+                In_values = new InArgument<Object[]>((ctx) => stringValues),
+                Out_dictionary = new OutArgument<Dictionary<Object, Object>>((ctx) => dictionary)
+
+            };
+
+            WorkflowInvoker.Invoke(buildDictionaryActivity);
+
+            Assert.IsTrue(dictionary.Count == 2);
+        }
+
     }
+
 }

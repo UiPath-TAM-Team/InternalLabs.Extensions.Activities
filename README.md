@@ -12,11 +12,17 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 # In alphabetical order
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
+* `Build Dictionary` : Builds a dictionary given a value and key arrays. And returns a built dictionary of the provided values and keys. 
+
 * `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
+
+* 'Clear Dictionary': Removes all Key-Value pairs from the Dictionary<Object, Object>.
 
 * `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
 
 * `Dictionary Contains Value`: Checks if the given value is present in an existing Dictionary<Object, Object> and returns Boolean value to confirm if present or not.
+
+* `Dictionary To String`: Converts a dictionary to a string. Note that this only converts simple objects. Complex objects require walking through potential nested complex objects (if your dictionary has dictionaries for elements, they will not be printed).
 
 * `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.
 
@@ -26,9 +32,13 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 ## Contributors
 
+* [Bryan Senter](https://www.linkedin.com/in/bryansenter/)
+
 * Cathleen Runde
 
 * Denny Chiramel
+
+* Duncan Steele
 
 * Gary Refka
 
@@ -41,3 +51,5 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 * Michael Tomlin
 
 * Robert Searing
+
+* [Sebastian Ramirez](https://www.linkedin.com/in/jsramirez/)
