@@ -754,6 +754,96 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Updates the value of a key from an existing Dictionary&lt;Object, Object&gt; based upon a provided Key and returns a Boolean value as to whether it was successful or not..
+        /// </summary>
+        public static string UpdateDictionary_Description {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to UpdateDictionary.
+        /// </summary>
+        public static string UpdateDictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Existing Dictionary&lt;Object, Object&gt;.
+        /// </summary>
+        public static string UpdateDictionary_In_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Dictionary.
+        /// </summary>
+        public static string UpdateDictionary_In_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Key of existing Dictionary&lt;Object, Object&gt;.
+        /// </summary>
+        public static string UpdateDictionary_In_Key_Description {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Key_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Key.
+        /// </summary>
+        public static string UpdateDictionary_In_Key_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Key_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New value for existing Dictionary&lt;Object, Object&gt;.
+        /// </summary>
+        public static string UpdateDictionary_In_Value_Description {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Value_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Value.
+        /// </summary>
+        public static string UpdateDictionary_In_Value_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_In_Value_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Boolean value as to whether value update was successful or not..
+        /// </summary>
+        public static string UpdateDictionary_Out_Result_Description {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_Out_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_Result.
+        /// </summary>
+        public static string UpdateDictionary_Out_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("UpdateDictionary_Out_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please provide a value either for {0} or {1}, but not both..
         /// </summary>
         public static string ValidationExclusiveProperties_Error {

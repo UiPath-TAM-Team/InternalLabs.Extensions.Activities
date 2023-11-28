@@ -1,12 +1,13 @@
 {
   "name": "UiPath.Activities.Extensions.TestProjectLegacy",
+  "projectId": "b6f42e5a-9497-4d40-ac42-4aa73c263f21",
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.1103202228]"
+    "UiPathTeam.Extensions.Activities": "[0.0.0.1127200425]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -87,7 +88,8 @@
         "fileName": "TestDictionaryToString.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "CSharp",
   "isTemplate": false,
