@@ -254,7 +254,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Dictionary_Description" xml:space="preserve">
-    <value />
+    <value>Dictionary to check for value in</value>
     <comment>property description</comment>
   </data>
   <data name="DictionaryContainsValue_Result_DisplayName" xml:space="preserve">
@@ -262,7 +262,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Result_Description" xml:space="preserve">
-    <value />
+    <value>Boolean result if value is present</value>
     <comment>property description</comment>
   </data>
   <data name="DictionaryContainsValue_Value_DisplayName" xml:space="preserve">
@@ -270,7 +270,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Value_Description" xml:space="preserve">
-    <value />
+    <value>Value to check for in Dictionary</value>
     <comment>property description</comment>
   </data>
   <data name="CountDictionary_DisplayName" xml:space="preserve">
