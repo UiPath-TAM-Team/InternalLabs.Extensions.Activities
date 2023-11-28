@@ -72,14 +72,25 @@ namespace UiPathTeam.Extensions.Activities
             var in_key = In_Key.Get(context);
             var in_dictionary = In_Dictionary.Get(context);
             var in_value = In_Value.Get(context);
-    
+            var out_result = Out_Result.Get(context);
+
             ///////////////////////////
             // Add execution logic HERE
             ///////////////////////////
 
+            if (in_dictionary.ContainsKey(in_key))
+            {
+                in_dictionary[in_key] = in_value;
+                out_result = true;
+            }
+            else
+            {
+                out_result = false;
+            }
+
             // Outputs
             return (ctx) => {
-                Out_Result.Set(ctx, null);
+                Out_Result.Set(ctx, out_result);
             };
         }
 

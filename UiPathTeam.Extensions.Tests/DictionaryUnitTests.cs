@@ -289,6 +289,35 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsTrue(dictionary.Count == 2);
         }
 
+        [TestMethod]
+        public void TestUpdateDictionary()
+        {
+            // Create a dictionary with a test key, value pair
+            var dictionary = new Dictionary<Object, Object>();
+
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+            dictionary.Add(stringKey, stringValue);
+
+            // Create the UpdateDictionary function
+            var updateDictionaryActivity = new UpdateDictionary
+            {
+                In_Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                In_Key = new InArgument<Object>((ctx) => stringKey),
+                In_Value = new InArgument<Object>((ctx) => stringKey),
+            };
+
+            // Invoke the workflow synchronously and capture the results
+            IDictionary<string, object> output = WorkflowInvoker.Invoke(updateDictionaryActivity);
+
+            // Retrieve the output value from the dictionary
+            var outputResult = (bool)output["Out_Result"]; // Assuming "Out_Result" is the output argument
+
+            // Assert the result based on your activity's logic
+            Assert.IsTrue(outputResult);
+        }
+
     }
 
 }
