@@ -289,6 +289,32 @@ namespace UiPathTeam.Extensions.Tests
             Assert.IsTrue(dictionary.Count == 2);
         }
 
+        [TestMethod]
+        public void TestDictionaryGetValues()
+        {
+            var dictionary = new Dictionary<Object, Object>();
+            var objectResult = new List<Object>();
+            var stringKey = "test key";
+            var stringValue = "test value";
+
+            dictionary.Add(stringKey, stringValue);
+            
+            stringKey = "test key 2";
+            stringValue = "test value 2";
+
+            dictionary.Add(stringKey, stringValue);
+
+            var dictionaryGetValues = new GetDictionaryValues
+            {
+                Dictionary = new InArgument<Dictionary<Object, Object>>((ctx) => dictionary),
+                Result = new OutArgument<List<Object>>((ctx) => objectResult),
+            };
+
+            WorkflowInvoker.Invoke(dictionaryGetValues);
+
+            Assert.IsTrue(objectResult.Count == 2);
+        }
+
     }
 
 }
