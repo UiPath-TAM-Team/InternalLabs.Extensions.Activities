@@ -646,7 +646,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Dictionary.
+        ///   Looks up a localized string similar to The dictionary to get all the values.
         /// </summary>
         public static string GetDictionaryValues_Dictionary_DisplayName {
             get {

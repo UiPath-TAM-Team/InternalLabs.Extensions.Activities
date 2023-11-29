@@ -450,7 +450,7 @@
     <comment>activity description</comment>
   </data>
   <data name="GetDictionaryValues_Dictionary_DisplayName" xml:space="preserve">
-    <value>Dictionary</value>
+    <value>The dictionary to get all the values</value>
     <comment>property name</comment>
   </data>
   <data name="GetDictionaryValues_Dictionary_Description" xml:space="preserve">
