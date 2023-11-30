@@ -430,7 +430,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Dictionary to check for value in.
         /// </summary>
         public static string DictionaryContainsValue_Dictionary_Description {
             get {
@@ -457,7 +457,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Boolean result if value is present.
         /// </summary>
         public static string DictionaryContainsValue_Result_Description {
             get {
@@ -475,7 +475,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Value to check for in Dictionary.
         /// </summary>
         public static string DictionaryContainsValue_Value_Description {
             get {
@@ -552,6 +552,60 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         public static string Do {
             get {
                 return ResourceManager.GetString("Do", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get a list of the keys in the dictionary..
+        /// </summary>
+        public static string GetDictionaryKeys_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Dictionary Keys.
+        /// </summary>
+        public static string GetDictionaryKeys_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The dictionary you want to retrieve the keys from..
+        /// </summary>
+        public static string GetDictionaryKeys_In_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_In_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Dictionary.
+        /// </summary>
+        public static string GetDictionaryKeys_In_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_In_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The list of keys from the provided dictionary..
+        /// </summary>
+        public static string GetDictionaryKeys_Out_Keys_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Out_Keys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_Keys.
+        /// </summary>
+        public static string GetDictionaryKeys_Out_Keys_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Out_Keys_DisplayName", resourceCulture);
             }
         }
         

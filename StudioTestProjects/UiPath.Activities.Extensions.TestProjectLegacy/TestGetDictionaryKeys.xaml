@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestGetDictionaryValue" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1035,1137" sap2010:WorkflowViewState.IdRef="TestGetDictionaryValue_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestGetDictionaryValue" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="1254,1137" sap2010:WorkflowViewState.IdRef="TestGetDictionaryValue_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mca="clr-namespace:Microsoft.CSharp.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:uea="clr-namespace:UiPathTeam.Extensions.Activities;assembly=UiPathTeam.Extensions.Activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -74,7 +74,7 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TestGetDictionaryValue" sap:VirtualizedContainerService.HintSize="658,1072" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TestGetDictionaryKeys" sap:VirtualizedContainerService.HintSize="658,1072" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Object" Name="stringKey">
         <Variable.Default>
@@ -87,16 +87,15 @@
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="scg:Dictionary(x:Object, x:Object)" Name="dictionary" />
-      <Variable x:TypeArguments="scg:Dictionary(x:Object, x:Object)" Name="dict1" />
       <Variable x:TypeArguments="scg:List(x:Object)" Name="result" />
       <Variable x:TypeArguments="x:Object" Name="stringKey2">
         <Variable.Default>
-          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"Key 2"</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"test key 2"</mca:CSharpValue>
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="x:Object" Name="stringValue2">
         <Variable.Default>
-          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">"Value 2"</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">"test value 2"</mca:CSharpValue>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -132,12 +131,12 @@
       </uea:AddToDictionary.Dictionary>
       <uea:AddToDictionary.Key>
         <InArgument x:TypeArguments="x:Object">
-          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">stringKey2</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">stringKey2</mca:CSharpValue>
         </InArgument>
       </uea:AddToDictionary.Key>
       <uea:AddToDictionary.Value>
         <InArgument x:TypeArguments="x:Object">
-          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">stringValue2</mca:CSharpValue>
+          <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">stringValue2</mca:CSharpValue>
         </InArgument>
       </uea:AddToDictionary.Value>
     </uea:AddToDictionary>
@@ -150,7 +149,7 @@
       <uea:GetDictionaryKeys ContinueOnError="{x:Null}" DisplayName="Get Dictionary Keys" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="GetDictionaryKeys_1">
         <uea:GetDictionaryKeys.In_Dictionary>
           <InArgument x:TypeArguments="scg:Dictionary(x:Object, x:Object)">
-            <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">dictionary</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="scg:Dictionary(x:Object, x:Object)" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">dictionary</mca:CSharpValue>
           </InArgument>
         </uea:GetDictionaryKeys.In_Dictionary>
         <uea:GetDictionaryKeys.Out_Keys>
@@ -169,12 +168,12 @@
       <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="534,60" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
         <uta:VerifyExpressionWithOperator.FirstExpression>
           <InArgument x:TypeArguments="x:Object">
-            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">result[0]</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">result[0]</mca:CSharpValue>
           </InArgument>
         </uta:VerifyExpressionWithOperator.FirstExpression>
         <uta:VerifyExpressionWithOperator.SecondExpression>
           <InArgument x:TypeArguments="x:Object">
-            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">stringKey</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">stringKey</mca:CSharpValue>
           </InArgument>
         </uta:VerifyExpressionWithOperator.SecondExpression>
       </uta:VerifyExpressionWithOperator>
@@ -186,7 +185,7 @@
         </uta:VerifyExpressionWithOperator.FirstExpression>
         <uta:VerifyExpressionWithOperator.SecondExpression>
           <InArgument x:TypeArguments="x:Object">
-            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">stringKey2</mca:CSharpValue>
+            <mca:CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">stringKey2</mca:CSharpValue>
           </InArgument>
         </uta:VerifyExpressionWithOperator.SecondExpression>
       </uta:VerifyExpressionWithOperator>
