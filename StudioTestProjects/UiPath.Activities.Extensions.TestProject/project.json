@@ -90,6 +90,12 @@
         "testCaseId": "ccefa99b-35ef-479b-b110-aca488e29705",
         "testCaseType": "TestCase",
         "fileName": "TestGetDictionaryValues.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ec7785f6-1491-4e0c-917b-7123a9b247fa",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryKeys.xaml"
       }
     ],
     "modernBehavior": true
