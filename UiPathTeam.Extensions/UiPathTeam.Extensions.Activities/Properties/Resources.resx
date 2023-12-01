@@ -465,4 +465,28 @@
     <value>List of values in the dictionary</value>
     <comment>property description</comment>
   </data>
+  <data name="GetDictionaryKeys_DisplayName" xml:space="preserve">
+    <value>Get Dictionary Keys</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Description" xml:space="preserve">
+    <value>Get a list of the keys in the dictionary.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary you want to retrieve the keys from.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_DisplayName" xml:space="preserve">
+    <value>out_Keys</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_Description" xml:space="preserve">
+    <value>The list of keys from the provided dictionary.</value>
+    <comment>property description</comment>
+  </data>
 </root>
