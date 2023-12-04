@@ -7,7 +7,7 @@
     "UiPath.System.Activities": "[22.10.5]",
     "UiPath.Testing.Activities": "[22.10.3]",
     "UiPath.UIAutomation.Activities": "[22.10.5]",
-    "UiPathTeam.Extensions.Activities": "[0.0.0.1128190042]"
+    "UiPathTeam.Extensions.Activities": "[0.0.0.1130204614]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -85,6 +85,18 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "TestDictionaryToString.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ccefa99b-35ef-479b-b110-aca488e29705",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryValues.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ec7785f6-1491-4e0c-917b-7123a9b247fa",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryKeys.xaml"
       }
     ],
     "modernBehavior": true,

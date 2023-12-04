@@ -430,7 +430,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Dictionary to check for value in.
         /// </summary>
         public static string DictionaryContainsValue_Dictionary_Description {
             get {
@@ -457,7 +457,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Boolean result if value is present.
         /// </summary>
         public static string DictionaryContainsValue_Result_Description {
             get {
@@ -475,7 +475,7 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to Value to check for in Dictionary.
         /// </summary>
         public static string DictionaryContainsValue_Value_Description {
             get {
@@ -556,6 +556,60 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Get a list of the keys in the dictionary..
+        /// </summary>
+        public static string GetDictionaryKeys_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get Dictionary Keys.
+        /// </summary>
+        public static string GetDictionaryKeys_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The dictionary you want to retrieve the keys from..
+        /// </summary>
+        public static string GetDictionaryKeys_In_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_In_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to in_Dictionary.
+        /// </summary>
+        public static string GetDictionaryKeys_In_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_In_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The list of keys from the provided dictionary..
+        /// </summary>
+        public static string GetDictionaryKeys_Out_Keys_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Out_Keys_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to out_Keys.
+        /// </summary>
+        public static string GetDictionaryKeys_Out_Keys_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryKeys_Out_Keys_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The activity will return a value from a given dictionary with the provided Key.
         /// </summary>
         public static string GetDictionaryValue_Description {
@@ -624,6 +678,60 @@ namespace UiPathTeam.Extensions.Activities.Properties {
         public static string GetDictionaryValue_Result_DisplayName {
             get {
                 return ResourceManager.GetString("GetDictionaryValue_Result_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The activity will return all the values from a given dictionary.
+        /// </summary>
+        public static string GetDictionaryValues_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get all values in the dictionary as list of objects.
+        /// </summary>
+        public static string GetDictionaryValues_Dictionary_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Dictionary_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The dictionary to get all the values.
+        /// </summary>
+        public static string GetDictionaryValues_Dictionary_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Dictionary_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetDictionaryValues.
+        /// </summary>
+        public static string GetDictionaryValues_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_DisplayName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to List of values in the dictionary.
+        /// </summary>
+        public static string GetDictionaryValues_Result_Description {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Result_Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Result.
+        /// </summary>
+        public static string GetDictionaryValues_Result_DisplayName {
+            get {
+                return ResourceManager.GetString("GetDictionaryValues_Result_DisplayName", resourceCulture);
             }
         }
         

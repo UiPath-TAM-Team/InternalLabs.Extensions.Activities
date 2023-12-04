@@ -254,7 +254,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Dictionary_Description" xml:space="preserve">
-    <value />
+    <value>Dictionary to check for value in</value>
     <comment>property description</comment>
   </data>
   <data name="DictionaryContainsValue_Result_DisplayName" xml:space="preserve">
@@ -262,7 +262,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Result_Description" xml:space="preserve">
-    <value />
+    <value>Boolean result if value is present</value>
     <comment>property description</comment>
   </data>
   <data name="DictionaryContainsValue_Value_DisplayName" xml:space="preserve">
@@ -270,7 +270,7 @@
     <comment>property name</comment>
   </data>
   <data name="DictionaryContainsValue_Value_Description" xml:space="preserve">
-    <value />
+    <value>Value to check for in Dictionary</value>
     <comment>property description</comment>
   </data>
   <data name="CountDictionary_DisplayName" xml:space="preserve">
@@ -541,6 +541,10 @@
     <value>in_Dictionary</value>
     <comment>property name</comment>
   </data>
+  <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
+    <value>in_values</value>
+    <comment>property name</comment>
+  </data>
   <data name="UpdateDictionary_In_Dictionary_Description" xml:space="preserve">
     <value>Existing Dictionary&lt;Object, Object&gt;</value>
     <comment>property description</comment>
@@ -551,6 +555,10 @@
   </data>
   <data name="UpdateDictionary_In_Value_DisplayName" xml:space="preserve">
     <value>in_Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
+    <value>out_dictionary</value>
     <comment>property name</comment>
   </data>
   <data name="UpdateDictionary_In_Value_Description" xml:space="preserve">
@@ -569,8 +577,52 @@
     <value>Boolean value as to whether value update was successful or not.</value>
     <comment>property description</comment>
   </data>
-  <data name="Output_Category" xml:space="preserve">
-    <value>Output</value>
-    <comment>category</comment>
+  <data name="GetDictionaryValues_DisplayName" xml:space="preserve">
+    <value>GetDictionaryValues</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryValues_Description" xml:space="preserve">
+    <value>The activity will return all the values from a given dictionary</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryValues_Dictionary_DisplayName" xml:space="preserve">
+    <value>The dictionary to get all the values</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValues_Dictionary_Description" xml:space="preserve">
+    <value>Get all values in the dictionary as list of objects</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValues_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValues_Result_Description" xml:space="preserve">
+    <value>List of values in the dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryKeys_DisplayName" xml:space="preserve">
+    <value>Get Dictionary Keys</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Description" xml:space="preserve">
+    <value>Get a list of the keys in the dictionary.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary you want to retrieve the keys from.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_DisplayName" xml:space="preserve">
+    <value>out_Keys</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_Description" xml:space="preserve">
+    <value>The list of keys from the provided dictionary.</value>
+    <comment>property description</comment>
   </data>
 </root>

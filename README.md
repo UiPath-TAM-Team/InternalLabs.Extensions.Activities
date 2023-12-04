@@ -24,13 +24,19 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Dictionary To String`: Converts a dictionary to a string. Note that this only converts simple objects. Complex objects require walking through potential nested complex objects (if your dictionary has dictionaries for elements, they will not be printed).
 
+* `Get Dictionary Keys` : Gets all the keys in existing Dictionary<Object, Object> and returns a List<Object> as the result.
+
 * `Get Dictionary Value` : Get the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns an Object value as the result.
+
+* `Get Dictionary Values` : Gets all the values in existing Dictionary<Object, Object> and returns a List<Object> as the result.
 
 * `Remove from Dictionary`: Removes a Key-Value pair from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
 ## Contributors
+
+* Ashwin Gaddam
 
 * [Bryan Senter](https://www.linkedin.com/in/bryansenter/)
 
@@ -42,6 +48,8 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * Gary Refka
 
+* [Joseph Long](https://www.linkedin.com/in/joseph-m-long/)
+
 * Kristopher Kim
 
 * [Michael Agarenzo](https://www.linkedin.com/in/magarenzo/)
@@ -50,6 +58,6 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * Michael Tomlin
 
-* Robert Searing
+* [Robert Searing](https://www.linkedin.com/in/robert-searing/)
 
 * [Sebastian Ramirez](https://www.linkedin.com/in/jsramirez/)
