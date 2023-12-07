@@ -489,10 +489,6 @@
     <value>Common</value>
     <comment>category</comment>
   </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
   <data name="Output_Category" xml:space="preserve">
     <value>Output</value>
     <comment>category</comment>
@@ -517,25 +513,13 @@
     <value>Please provide values for both {0} and {1}.</value>
     <comment>error message; {0} &amp; {1} are complementary properties</comment>
   </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
   <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
     <value>in_values</value>
     <comment>property name</comment>
   </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
-  </data>
   <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
     <value>out_dictionary</value>
     <comment>property name</comment>
-  </data>
-  <data name="Input_Category" xml:space="preserve">
-    <value>Input</value>
-    <comment>category</comment>
   </data>
   <data name="UpdateDictionary_Out_Result_DisplayName" xml:space="preserve">
     <value>out_Result</value>
