@@ -58,6 +58,10 @@ namespace UiPathTeam.Extensions.Activities.Design
             builder.AddCustomAttributes(typeof(BuildDictionary), new DesignerAttribute(typeof(BuildDictionaryDesigner)));
             builder.AddCustomAttributes(typeof(BuildDictionary), new HelpKeywordAttribute(""));
 
+            builder.AddCustomAttributes(typeof(UpdateDictionary), categoryAttribute);
+            builder.AddCustomAttributes(typeof(UpdateDictionary), new DesignerAttribute(typeof(UpdateDictionaryDesigner)));
+            builder.AddCustomAttributes(typeof(UpdateDictionary), new HelpKeywordAttribute(""));
+            
             builder.AddCustomAttributes(typeof(GetDictionaryValues), categoryAttribute);
             builder.AddCustomAttributes(typeof(GetDictionaryValues), new DesignerAttribute(typeof(GetDictionaryValuesDesigner)));
             builder.AddCustomAttributes(typeof(GetDictionaryValues), new HelpKeywordAttribute(""));
@@ -65,7 +69,6 @@ namespace UiPathTeam.Extensions.Activities.Design
             builder.AddCustomAttributes(typeof(GetDictionaryKeys), categoryAttribute);
             builder.AddCustomAttributes(typeof(GetDictionaryKeys), new DesignerAttribute(typeof(GetDictionaryKeysDesigner)));
             builder.AddCustomAttributes(typeof(GetDictionaryKeys), new HelpKeywordAttribute(""));
-
 
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

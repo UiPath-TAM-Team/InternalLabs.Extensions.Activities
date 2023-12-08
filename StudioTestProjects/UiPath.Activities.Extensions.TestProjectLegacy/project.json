@@ -1,5 +1,6 @@
 {
   "name": "UiPath.Activities.Extensions.TestProjectLegacy",
+  "projectId": "b6f42e5a-9497-4d40-ac42-4aa73c263f21",
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
@@ -88,6 +89,12 @@
       },
       {
         "editingStatus": "InProgress",
+        "testCaseId": "60867aec-6582-4ab2-a995-3b537889ea20",
+        "testCaseType": "TestCase",
+        "fileName": "TestUpdateDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
         "testCaseId": "a1e185d0-8295-4a99-a3cb-ab70856b14b0",
         "testCaseType": "TestCase",
         "fileName": "TestGetDictionaryValues.xaml"
@@ -99,7 +106,8 @@
         "fileName": "TestGetDictionaryKeys.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "CSharp",
   "isTemplate": false,

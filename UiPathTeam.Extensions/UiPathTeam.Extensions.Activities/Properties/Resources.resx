@@ -441,6 +441,62 @@
     <value>Out of created dictionary. </value>
     <comment>property description</comment>
   </data>
+  <data name="UpdateDictionary_DisplayName" xml:space="preserve">
+    <value>UpdateDictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="UpdateDictionary_Description" xml:space="preserve">
+    <value>Updates the value of a key from an existing Dictionary&lt;Object, Object&gt; based upon a provided Key and returns a Boolean value as to whether it was successful or not.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Key_DisplayName" xml:space="preserve">
+    <value>in_Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Key_Description" xml:space="preserve">
+    <value>Key of existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value>Existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Value_DisplayName" xml:space="preserve">
+    <value>in_Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Value_Description" xml:space="preserve">
+    <value>New value for existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_Description" xml:space="preserve">
+    <value>Boolean value as to whether value update was successful or not.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
+    <value>in_values</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
+    <value>out_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_Description" xml:space="preserve">
+    <value>Boolean value as to whether value update was successful or not.</value>
+    <comment>property description</comment>
+  </data>
   <data name="GetDictionaryValues_DisplayName" xml:space="preserve">
     <value>GetDictionaryValues</value>
     <comment>activity name</comment>

@@ -42,6 +42,7 @@
     <None Remove="Designers\CountDictionaryDesigner.xaml" />
     <None Remove="Designers\GetDictionaryValuesDesigner.xaml" />
     <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
+    <None Remove="Designers\UpdateDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
@@ -125,6 +126,10 @@
     </Page>
     <Page Include="Designers\RemoveFromDictionaryDesigner.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </Page>
+    <Page Include="Designers\UpdateDictionaryDesigner.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Page>
     <Page Include="Themes\Icons.xaml">
       <Generator>XamlIntelliSenseFileGenerator</Generator>

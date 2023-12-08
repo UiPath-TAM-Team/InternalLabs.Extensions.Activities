@@ -1,5 +1,6 @@
 {
   "name": "UiPath.Activities.Extenstions.TestProject",
+  "projectId": "42368884-1db1-40c8-a905-163fe53904dd",
   "description": "",
   "main": "Main.xaml",
   "dependencies": {
@@ -98,7 +99,8 @@
         "fileName": "TestGetDictionaryKeys.xaml"
       }
     ],
-    "modernBehavior": true
+    "modernBehavior": true,
+    "saveToCloud": false
   },
   "expressionLanguage": "CSharp",
   "isTemplate": false,
