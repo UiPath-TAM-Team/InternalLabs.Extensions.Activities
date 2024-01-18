@@ -121,6 +121,10 @@
     <value>InternalLabs.Extensions</value>
     <comment>category</comment>
   </data>
+  <data name="Category_Dictionaries" xml:space="preserve">
+    <value>InternalLabs.Activities.Dictionaries</value>
+    <comment>category</comment>
+  </data>
   <data name="Collection" xml:space="preserve">
     <value>Collection</value>
     <comment>label</comment>

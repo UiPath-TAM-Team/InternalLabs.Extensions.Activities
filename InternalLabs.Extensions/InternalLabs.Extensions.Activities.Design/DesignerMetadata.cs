@@ -13,7 +13,7 @@ namespace InternalLabs.Extensions.Activities.Design
             var builder = new AttributeTableBuilder();
             builder.ValidateTable();
 
-            var categoryAttribute = new CategoryAttribute($"{Resources.Category}");
+            var categoryAttribute = new CategoryAttribute($"{Resources.Category_Dictionaries}");
 
             builder.AddCustomAttributes(typeof(AddToDictionary), categoryAttribute);
             builder.AddCustomAttributes(typeof(AddToDictionary), new DesignerAttribute(typeof(AddToDictionaryDesigner)));

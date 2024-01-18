@@ -70,6 +70,15 @@ namespace InternalLabs.Extensions.Activities.Design.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to InternalLabs.Activities.Dictionaries.
+        /// </summary>
+        public static string Category_Dictionaries {
+            get {
+                return ResourceManager.GetString("Category_Dictionaries", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Collection.
         /// </summary>
         public static string Collection {

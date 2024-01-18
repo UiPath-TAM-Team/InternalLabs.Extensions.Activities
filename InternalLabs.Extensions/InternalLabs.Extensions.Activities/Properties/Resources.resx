@@ -238,7 +238,7 @@
     <comment>property name</comment>
   </data>
   <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
-    <value />
+    <value>This will return a boolean result expressing whether the activity was successful in removing the key/value pair	</value>
     <comment>property description</comment>
   </data>
   <data name="DictionaryContainsValue_DisplayName" xml:space="preserve">

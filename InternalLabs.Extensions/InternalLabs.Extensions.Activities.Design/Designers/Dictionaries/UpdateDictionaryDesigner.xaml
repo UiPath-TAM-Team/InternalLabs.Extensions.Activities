@@ -1,4 +1,4 @@
-<sap:ActivityDesigner x:Class="InternalLabs.Extensions.Activities.Design.Designers.RemoveFromDictionaryDesigner"
+<sap:ActivityDesigner x:Class="InternalLabs.Extensions.Activities.Design.Designers.UpdateDictionaryDesigner"
                       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                       xmlns:activity="clr-namespace:InternalLabs.Extensions.Activities.Properties;assembly=InternalLabs.Extensions.Activities"
@@ -11,7 +11,7 @@
     <sap:ActivityDesigner.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="..\Themes\Generic.xaml" />
+                <ResourceDictionary Source="..\..\Themes\Generic.xaml" />
             </ResourceDictionary.MergedDictionaries>
             <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
             <converters:ActivityIconConverter x:Key="ActivityIconConverter" />
@@ -29,21 +29,31 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Label Content="{x:Static activity:Resources.RemoveFromDictionary_In_Dictionary_DisplayName}" Grid.Row="0"
-                   ToolTip="{x:Static activity:Resources.RemoveFromDictionary_In_Dictionary_Description}"/>
-            <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[In_Dictionary].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.RemoveFromDictionary_In_Dictionary_Description}" UseLocationExpression="False">
+            <Label Content="{x:Static activity:Resources.UpdateDictionary_In_Key_DisplayName}" Grid.Row="0"
+                   ToolTip="{x:Static activity:Resources.UpdateDictionary_In_Key_Description}"/>
+            <sapv:ExpressionTextBox Grid.Row="1" ExpressionType="{Binding ModelItem.Properties[In_Key].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.UpdateDictionary_In_Key_Description}" UseLocationExpression="False">
+                <sapv:ExpressionTextBox.Expression>
+                    <Binding Path="ModelItem.In_Key" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                </sapv:ExpressionTextBox.Expression>
+            </sapv:ExpressionTextBox>
+
+            <Label Content="{x:Static activity:Resources.UpdateDictionary_In_Dictionary_DisplayName}" Grid.Row="2"
+                   ToolTip="{x:Static activity:Resources.UpdateDictionary_In_Dictionary_Description}"/>
+            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[In_Dictionary].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.UpdateDictionary_In_Dictionary_Description}" UseLocationExpression="False">
                 <sapv:ExpressionTextBox.Expression>
                     <Binding Path="ModelItem.In_Dictionary" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
                 </sapv:ExpressionTextBox.Expression>
             </sapv:ExpressionTextBox>
 
-            <Label Content="{x:Static activity:Resources.RemoveFromDictionary_In_Key_DisplayName}" Grid.Row="2"
-                   ToolTip="{x:Static activity:Resources.RemoveFromDictionary_In_Key_Description}"/>
-            <sapv:ExpressionTextBox Grid.Row="3" ExpressionType="{Binding ModelItem.Properties[In_Key].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.RemoveFromDictionary_In_Key_Description}" UseLocationExpression="False">
+            <Label Content="{x:Static activity:Resources.UpdateDictionary_In_Value_DisplayName}" Grid.Row="4"
+                   ToolTip="{x:Static activity:Resources.UpdateDictionary_In_Value_Description}"/>
+            <sapv:ExpressionTextBox Grid.Row="5" ExpressionType="{Binding ModelItem.Properties[In_Value].PropertyType.GenericTypeArguments[0]}" OwnerActivity="{Binding Path=ModelItem}" HintText="{x:Static activity:Resources.UpdateDictionary_In_Value_Description}" UseLocationExpression="False">
                 <sapv:ExpressionTextBox.Expression>
-                    <Binding Path="ModelItem.In_Key" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
+                    <Binding Path="ModelItem.In_Value" Converter="{StaticResource ArgumentToExpressionConverter}" Mode="TwoWay" ConverterParameter="In" UpdateSourceTrigger="PropertyChanged" />
                 </sapv:ExpressionTextBox.Expression>
             </sapv:ExpressionTextBox>
         </Grid>

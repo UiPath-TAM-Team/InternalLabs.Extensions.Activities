@@ -817,7 +817,7 @@ namespace InternalLabs.Extensions.Activities.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to .
+        ///   Looks up a localized string similar to This will return a boolean result expressing whether the activity was successful in removing the key/value pair	.
         /// </summary>
         public static string RemoveFromDictionary_Out_Result_Description {
             get {
