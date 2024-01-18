@@ -10,13 +10,13 @@
   <!-- Package Metadata -->
   <PropertyGroup>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseUrl>https://www.uipath.com/hubfs/legalspot/UiPath_Activity_License_Agreement.pdf</PackageLicenseUrl>
     <Description>Provides useful extension methods, alternate Task based API and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects</Description>
     <Authors>UiPath Public Sector Technical Account Managers</Authors>
     <Company>UiPath</Company>
     <Copyright>© 2023 UiPath</Copyright>
     <PackageTags>UiPath TAM Extensions Activities</PackageTags>
-    <PackageProjectUrl>https://github.com/UiPath-TAM-Team/UiPathTAMTeam.Extensions.Activities</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/UiPath-TAM-Team/InternalLabs.Extensions.Activities</PackageProjectUrl>
     <PackageIconUrl>https://raw.githubusercontent.com/NuGet/Samples/master/PackageIconNuspecExample/icon.png</PackageIconUrl>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
@@ -31,18 +31,18 @@
     <NoWarn>1701;1702;1572;1573;1591;1998</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Designers\AddToDictionaryDesigner.xaml" />
-    <None Remove="Designers\BuildDictionaryDesigner.xaml" />
-    <None Remove="Designers\ClearDictionaryDesigner.xaml" />
-    <None Remove="Designers\DictionaryContainsKeyDesigner.xaml" />
-    <None Remove="Designers\DictionaryContainsValueDesigner.xaml" />
-    <None Remove="Designers\DictionaryToStringDesigner.xaml" />
-    <None Remove="Designers\GetDictionaryKeysDesigner.xaml" />
-    <None Remove="Designers\GetDictionaryValueDesigner.xaml" />
-    <None Remove="Designers\CountDictionaryDesigner.xaml" />
-    <None Remove="Designers\GetDictionaryValuesDesigner.xaml" />
-    <None Remove="Designers\RemoveFromDictionaryDesigner.xaml" />
-    <None Remove="Designers\UpdateDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\AddToDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\BuildDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\ClearDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\DictionaryContainsKeyDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\DictionaryContainsValueDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\DictionaryToStringDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\GetDictionaryKeysDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\GetDictionaryValueDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\CountDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\GetDictionaryValuesDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\RemoveFromDictionaryDesigner.xaml" />
+    <None Remove="Designers\Dictionaries\UpdateDictionaryDesigner.xaml" />
   </ItemGroup>
   <!-- Package Icon -->
   <ItemGroup>
