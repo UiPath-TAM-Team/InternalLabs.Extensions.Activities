@@ -1,0 +1,127 @@
+{
+  "name": "InternalLabs.Extensions.Activities.TestProject",
+  "projectId": "b6f42e5a-9497-4d40-ac42-4aa73c263f21",
+  "description": "",
+  "main": "Main.xaml",
+  "dependencies": {
+    "InternalLabs.Extensions.Activities": "[0.0.0.118211230]",
+    "UiPath.System.Activities": "[22.10.5]",
+    "UiPath.Testing.Activities": "[22.10.3]",
+    "UiPath.UIAutomation.Activities": "[22.10.5]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.10.7.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "38ebd7d0-68bc-4334-81b6-bfea22c1dd65",
+        "testCaseType": "TestCase",
+        "fileName": "TestAddToDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a74af245-1168-4238-8ae9-e238df29e1c2",
+        "testCaseType": "TestCase",
+        "fileName": "TestRemoveFromDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "8df1ed1a-4947-483d-bfeb-0b9d6d650d0a",
+        "testCaseType": "TestCase",
+        "fileName": "TestCountDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e99c9dbd-03e1-431d-8ea9-a6eaf236c9b9",
+        "testCaseType": "TestCase",
+        "fileName": "TestDictionaryContainsValue.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "547a898f-0173-4e04-9d52-1dcc7b1563e4",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryValue.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "63ed6d23-f216-4d09-8c59-75a9c8d8a5ec",
+        "testCaseType": "TestCase",
+        "fileName": "TestClearDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "258849bd-c2be-487b-ae10-7d0172bfced9",
+        "testCaseType": "TestCase",
+        "fileName": "TestDictionaryToString.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "60867aec-6582-4ab2-a995-3b537889ea20",
+        "testCaseType": "TestCase",
+        "fileName": "TestUpdateDictionary.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a1e185d0-8295-4a99-a3cb-ab70856b14b0",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryValues.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "7c847031-3062-42d6-9167-8f55d48e204b",
+        "testCaseType": "TestCase",
+        "fileName": "TestGetDictionaryKeys.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f67df05f-148e-4e3e-af66-776a2c257dfe",
+        "testCaseType": "TestCase",
+        "fileName": "TestDictionaryContainsKey.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "662b9dc1-9ff8-445f-9d0f-abf85d4f1062",
+        "testCaseType": "TestCase",
+        "fileName": "TestBuildDictionary.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}
