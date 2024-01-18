@@ -13,8 +13,8 @@ jobs:
     runs-on: windows-2022
 
     env:
-      Solution_Name: UiPathTeam.Extensions.sln
-      Nuget_Name: UiPathTeam.Extensions.Activities
+      Solution_Name: InternalLabs.Extensions.sln
+      Nuget_Name: InternalLabs.Extensions.Activities
 
     steps:
     - name: Checkout code

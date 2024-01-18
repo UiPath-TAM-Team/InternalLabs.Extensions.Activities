@@ -1,0 +1,548 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ContinueOnError_Description" xml:space="preserve">
+    <value>If set, continue executing the remaining activities even if the current activity has failed.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="ContinueOnError_DisplayName" xml:space="preserve">
+    <value>ContinueOnError</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Timeout_Description" xml:space="preserve">
+    <value>Specifies the amount of time (in milliseconds) to wait for the activity to run before an error is thrown. The default value is 60000 (1 minute).</value>
+    <comment>property description</comment>
+  </data>
+  <data name="Timeout_DisplayName" xml:space="preserve">
+    <value>Timeout (milliseconds)</value>
+    <comment>property name</comment>
+  </data>
+  <data name="Timeout_Error" xml:space="preserve">
+    <value>The activity timed out and was canceled.</value>
+    <comment>error message</comment>
+  </data>
+  <data name="Do" xml:space="preserve">
+    <value>Do</value>
+    <comment>generic</comment>
+  </data>
+  <data name="Common_Category" xml:space="preserve">
+    <value>Common</value>
+    <comment>category</comment>
+  </data>
+  <data name="Authentication_Category" xml:space="preserve">
+    <value>Authentication</value>
+    <comment>category</comment>
+  </data>
+  <data name="Input_Category" xml:space="preserve">
+    <value>Input</value>
+    <comment>category</comment>
+  </data>
+  <data name="Output_Category" xml:space="preserve">
+    <value>Output</value>
+    <comment>category</comment>
+  </data>
+  <data name="Options_Category" xml:space="preserve">
+    <value>Options</value>
+    <comment>category</comment>
+  </data>
+  <data name="ValidationScope_Error" xml:space="preserve">
+    <value>Cannot be used outside of a {0}.</value>
+    <comment>error message; {0} is a container activity (e.g. a scope)</comment>
+  </data>
+  <data name="ValidationValue_Error" xml:space="preserve">
+    <value>Please provide a value for {0}.</value>
+    <comment>error message; {0} is the name of a missing property</comment>
+  </data>
+  <data name="ValidationExclusiveProperties_Error" xml:space="preserve">
+    <value>Please provide a value either for {0} or {1}, but not both.</value>
+    <comment>error message; {0} &amp; {1} are mutually exclusive activities</comment>
+  </data>
+  <data name="ValidationOverloadGroup_Error" xml:space="preserve">
+    <value>Please provide values for both {0} and {1}.</value>
+    <comment>error message; {0} &amp; {1} are complementary properties</comment>
+  </data>
+  <data name="AddToDictionary_DisplayName" xml:space="preserve">
+    <value>Add To Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="AddToDictionary_Description" xml:space="preserve">
+    <value>Inserts a Key-Value pair into an existing Dictionary</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="AddToDictionary_Dictionary_DisplayName" xml:space="preserve">
+    <value>Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="AddToDictionary_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary to insert the key-value pair into</value>
+    <comment>property description</comment>
+  </data>
+  <data name="AddToDictionary_Key_DisplayName" xml:space="preserve">
+    <value>Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="AddToDictionary_Key_Description" xml:space="preserve">
+    <value>The key associated with the value</value>
+    <comment>property description</comment>
+  </data>
+  <data name="AddToDictionary_Value_DisplayName" xml:space="preserve">
+    <value>Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="AddToDictionary_Value_Description" xml:space="preserve">
+    <value>The value associated with the key</value>
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_DisplayName" xml:space="preserve">
+    <value>Remove From Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Description" xml:space="preserve">
+    <value>Removes a value/key pair from a dictionary using the key</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary from which the value/key pair will be removed</value>
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_DisplayName" xml:space="preserve">
+    <value>in_Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_In_Key_Description" xml:space="preserve">
+    <value>The key that will be used to search for the related key/value pair to remove from the dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="RemoveFromDictionary_Out_Result_Description" xml:space="preserve">
+    <value>This will return a boolean result expressing whether the activity was successful in removing the key/value pair	</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsValue_DisplayName" xml:space="preserve">
+    <value>Dictionary Contains Value</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DictionaryContainsValue_Description" xml:space="preserve">
+    <value>Returns a Boolean if the provided dictionary contains the given value.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DictionaryContainsValue_Dictionary_DisplayName" xml:space="preserve">
+    <value>Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsValue_Dictionary_Description" xml:space="preserve">
+    <value>Dictionary to check for value in</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsValue_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsValue_Result_Description" xml:space="preserve">
+    <value>Boolean result if value is present</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsValue_Value_DisplayName" xml:space="preserve">
+    <value>Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsValue_Value_Description" xml:space="preserve">
+    <value>Value to check for in Dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CountDictionary_DisplayName" xml:space="preserve">
+    <value>Count Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="CountDictionary_Description" xml:space="preserve">
+    <value>Counts the number of Value/key pairs in dictionary and returns count</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="CountDictionary_In_dictionary_DisplayName" xml:space="preserve">
+    <value>in_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CountDictionary_In_dictionary_Description" xml:space="preserve">
+    <value>Dictionary to be counted</value>
+    <comment>property description</comment>
+  </data>
+  <data name="CountDictionary_Out_result_DisplayName" xml:space="preserve">
+    <value>out_result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="CountDictionary_Out_result_Description" xml:space="preserve">
+    <value>Int of count of key pairs</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValue_DisplayName" xml:space="preserve">
+    <value>Get Dictionary Value</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryValue_Description" xml:space="preserve">
+    <value>The activity will return a value from a given dictionary with the provided Key</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryValue_Dictionary_DisplayName" xml:space="preserve">
+    <value>Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Dictionary_Description" xml:space="preserve">
+    <value>Enter the Dictionary to get the value</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValue_Key_DisplayName" xml:space="preserve">
+    <value>Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Key_Description" xml:space="preserve">
+    <value>Enter the key to get value from the Dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValue_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValue_Result_Description" xml:space="preserve">
+    <value>Output from the Dictionary for the provided key</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_DisplayName" xml:space="preserve">
+    <value>Dictionary Contains Key</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Description" xml:space="preserve">
+    <value>determine if a specific Key exists within a given Dictionary. The activity will provide a Boolean results as to whether a provided Key exists within a provided Dictionary. When the given key exists, then value will be returned. When the given key is does not exists, a null is returned for the value.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_dictionary_DisplayName" xml:space="preserve">
+    <value>in_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_dictionary_Description" xml:space="preserve">
+    <value>Dictionary to be evaluated</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_key_DisplayName" xml:space="preserve">
+    <value>in_key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_In_key_Description" xml:space="preserve">
+    <value>Key to be evaulated</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_result_DisplayName" xml:space="preserve">
+    <value>out_result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_result_Description" xml:space="preserve">
+    <value>Bool result of existing key</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_value_DisplayName" xml:space="preserve">
+    <value>out_value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryContainsKey_Out_value_Description" xml:space="preserve">
+    <value>Dictionary value if exists</value>
+    <comment>property description</comment>
+  </data>
+  <data name="ClearDictionary_DisplayName" xml:space="preserve">
+    <value>Clear Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="ClearDictionary_Description" xml:space="preserve">
+    <value>Removes all keys and values from the Dictionary&lt;TKey,TValue&gt;.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="ClearDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>In_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="ClearDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value>Dictionary&lt;TKey,TValue&gt; object to be cleared of all keys and values.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryToString_DisplayName" xml:space="preserve">
+    <value>Dictionary To String</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="DictionaryToString_Description" xml:space="preserve">
+    <value>Convert dictionary to string value</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="DictionaryToString_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>In_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryToString_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary to convert</value>
+    <comment>property description</comment>
+  </data>
+  <data name="DictionaryToString_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="DictionaryToString_Result_Description" xml:space="preserve">
+    <value>String representation of the dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="BuildDictionary_DisplayName" xml:space="preserve">
+    <value>Build Dictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="BuildDictionary_Description" xml:space="preserve">
+    <value>Activity that takes in an array of keys and values and outputs a dictionary.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="BuildDictionary_In_keys_DisplayName" xml:space="preserve">
+    <value>in_keys</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_In_keys_Description" xml:space="preserve">
+    <value>Input for the array of keys. </value>
+    <comment>property description</comment>
+  </data>
+  <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
+    <value>in_values</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_In_values_Description" xml:space="preserve">
+    <value>Input for the array of values.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
+    <value>out_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_Description" xml:space="preserve">
+    <value>Out of created dictionary. </value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_DisplayName" xml:space="preserve">
+    <value>UpdateDictionary</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="UpdateDictionary_Description" xml:space="preserve">
+    <value>Updates the value of a key from an existing Dictionary&lt;Object, Object&gt; based upon a provided Key and returns a Boolean value as to whether it was successful or not.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Key_DisplayName" xml:space="preserve">
+    <value>in_Key</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Key_Description" xml:space="preserve">
+    <value>Key of existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Dictionary_Description" xml:space="preserve">
+    <value>Existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_In_Value_DisplayName" xml:space="preserve">
+    <value>in_Value</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_In_Value_Description" xml:space="preserve">
+    <value>New value for existing Dictionary&lt;Object, Object&gt;</value>
+    <comment>property description</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_Description" xml:space="preserve">
+    <value>Boolean value as to whether value update was successful or not.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="BuildDictionary_In_values_DisplayName" xml:space="preserve">
+    <value>in_values</value>
+    <comment>property name</comment>
+  </data>
+  <data name="BuildDictionary_Out_dictionary_DisplayName" xml:space="preserve">
+    <value>out_dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_DisplayName" xml:space="preserve">
+    <value>out_Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="UpdateDictionary_Out_Result_Description" xml:space="preserve">
+    <value>Boolean value as to whether value update was successful or not.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValues_DisplayName" xml:space="preserve">
+    <value>GetDictionaryValues</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryValues_Description" xml:space="preserve">
+    <value>The activity will return all the values from a given dictionary</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryValues_Dictionary_DisplayName" xml:space="preserve">
+    <value>The dictionary to get all the values</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValues_Dictionary_Description" xml:space="preserve">
+    <value>Get all values in the dictionary as list of objects</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryValues_Result_DisplayName" xml:space="preserve">
+    <value>Result</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryValues_Result_Description" xml:space="preserve">
+    <value>List of values in the dictionary</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryKeys_DisplayName" xml:space="preserve">
+    <value>Get Dictionary Keys</value>
+    <comment>activity name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Description" xml:space="preserve">
+    <value>Get a list of the keys in the dictionary.</value>
+    <comment>activity description</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_DisplayName" xml:space="preserve">
+    <value>in_Dictionary</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_In_Dictionary_Description" xml:space="preserve">
+    <value>The dictionary you want to retrieve the keys from.</value>
+    <comment>property description</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_DisplayName" xml:space="preserve">
+    <value>out_Keys</value>
+    <comment>property name</comment>
+  </data>
+  <data name="GetDictionaryKeys_Out_Keys_Description" xml:space="preserve">
+    <value>The list of keys from the provided dictionary.</value>
+    <comment>property description</comment>
+  </data>
+</root>

@@ -1,22 +1,21 @@
-# [UiPathTeam.Extensions.Activities](https://marketplace.uipath.com/listings/uipathteam-extensions-activities)
+# [InternalLabs.Extensions.Activities](https://marketplace.uipath.com/listings/extensions)
 
 A collection of extension methods, tasks, and activities. An unofficial port of Microsoft.Activities.Extension to work with Windows-Legacy and Windows UiPath Studio Projects
 
 ## Installation
 
-Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activities -> pick the package(s) to install and click Install -> Save
+Studio -> Manage Packages -> Community -> (Search) InternalLabs.Extensions.Activities -> pick the package(s) to install and click Install -> Save
 
-## Activities
+## Activities (In alphabetical order)
 
-### Statements
-# In alphabetical order
+### Dictionaries:
 * `Add to Dictionary`: Inserts a Key-Value pair into an existing Dictionary<Object, Object>.
 
 * `Build Dictionary` : Builds a dictionary given a value and key arrays. And returns a built dictionary of the provided values and keys. 
 
 * `Count Dictionary`: Counts the Key-Value pair in a dictionary of Dictionary<Object, Object> and returns an int
 
-* 'Clear Dictionary': Removes all Key-Value pairs from the Dictionary<Object, Object>.
+* `Clear Dictionary`: Removes all Key-Value pairs from the Dictionary<Object, Object>.
 
 * `Dictionary Contains Key`: Checks if the given key is present in an existing Dictionary<Object, Object> and returns Boolean value and value of key if exists
 
@@ -34,7 +33,7 @@ Studio -> Manage Packages -> Community -> (Search) UiPathTeam.Extensions.Activit
 
 * `Update Dictionary Value` : Updates the value of a key from an existing Dictionary<Object, Object> based upon a provided Key and returns a Boolean value as to whether it was successful or not.
 
-## Contributors
+### Contributors
 
 * Ashwin Gaddam
 
